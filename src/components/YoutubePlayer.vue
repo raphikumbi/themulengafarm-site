@@ -43,17 +43,17 @@ const isPlaying = ref(false)
             {{ title }}
           </h3>
 
-          <div class="self-start flex items-center gap-2 px-4 py-2 bg-neutral-200 rounded-lg backdrop-blur-sm text-sm font-semibold text-neutral-800 transition-all duration-300 group-hover:bg-green-500 group-hover:text-slate-950">
+          <div class="self-start min-w-25 min-h-12.5 flex items-center gap-2 px-7 py-2 bg-neutral-200 backdrop-blur-sm text-m font-semibold text-neutral-800 transition-all duration-300 group-hover:bg-white group-hover:text-slate-950">
             <span>Play</span>
 
             <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
-              <path d="M8 5v14l11-7z" />
+              <path d="M8 5v18l12-9z" />
             </svg>
           </div>
 
         </div>
 
-        <div class="px-3 py-2 bg-neutral-800 rounded-lg backdrop-blur-sm text-xs font-mono text-neutral-200">
+        <div class="px-3 py-2 bg-neutral-800 backdrop-blur-sm text-xs font-mono text-neutral-200">
           {{ duration }}
         </div>
 

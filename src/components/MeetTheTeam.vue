@@ -22,6 +22,7 @@ import TeamMemberCard from "./TeamMemberCard.vue";
 
 gsap.registerPlugin(ScrollTrigger);
 
+const grid = ref(null);
 const cardEls = ref([]);
 
 const team = [
@@ -42,21 +43,47 @@ const team = [
   {
     src: "/team/portrait-louis.jpg",
     name: "Louis",
-    func: "Media",
+    func: "Media, Architect",
     loc: "STRASBOURG, FRANCE",
     desc: "I’m passionate about my career in media, and I love capturing stories through photography and visual art. I enjoy transforming perspectives and sharing moments that highlight people, culture, and everyday life, especially by giving a voice and visibility to those who are often unseen. I feel called to use media as a tool for a positive impact."
+  },
+
+  {
+    src: "/team/portrait-sebastian.jpg",
+    name: "Sebastian",
+    func: "Finances",
+    loc: "ZÜRICH, SWITZERLAND",
+    desc: "..."
+  },
+  {
+    src: "/team/portrait-raphael.jpg",
+    name: "Raphael",
+    func: "IT, Media",
+    loc: "BASEL, SWITZERLAND",
+    desc: "..."
+  },
+  {
+    src: "/team/portrait-francois.jpg",
+    name: "François",
+    func: "Landscape Architect",
+    loc: "BUSCHWILER, FRANCE",
+    desc: "..."
   }
 ];
 
 onMounted(() => {
-  gsap.from(".team-card", {
+  const els = cardEls.value
+      .filter(Boolean)
+      .map(c => c.$el);
+
+  gsap.from(els, {
     opacity: 0,
     y: 40,
     duration: 0.8,
     ease: "power3.out",
     stagger: 0.2,
     scrollTrigger: {
-      trigger: ".team-card",
+      trigger: grid.value,
       start: "top 85%",
       toggleActions: "play none none none",
       once: false

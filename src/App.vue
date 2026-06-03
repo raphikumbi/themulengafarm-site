@@ -10,6 +10,7 @@ import FullScreenPhoto from "./components/FullScreenPhoto.vue";
 import SubSubTitle from "./components/SubSubTitle.vue";
 import MeetTheTeam from "./components/MeetTheTeam.vue";
 import BigTitle from "./components/BigTitle.vue";
+import Footer from "./components/Footer.vue";
 
 const header = ref(null)
 
@@ -81,7 +82,7 @@ onMounted(() => {
 
     <div class="mx-auto max-w-7xl px-4 py-2">
       <div class="px-5 py-10">
-        <h1 class="text-5xl md:text-7xl font-semibold tracking-wide text-white">
+        <h1 class="text-4xl md:text-7xl font-semibold tracking-wide text-white">
           Meet the team
         </h1>
       </div>
@@ -91,5 +92,7 @@ onMounted(() => {
 
     <br>
     <br>
+
+    <Footer />
   </div>
 </template>

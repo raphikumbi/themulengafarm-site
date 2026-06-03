@@ -1,5 +1,4 @@
 <script setup>
-import SubSubTitle from "./SubSubTitle.vue";
 
 defineProps({
   src: String,
@@ -19,7 +18,7 @@ defineProps({
         class="w-80 h-80 object-cover rounded-lg"
     />
 
-    <h3 class="text-sm md:text-2xl font-semibold tracking-wide text-white">
+    <h3 class="text-lg md:text-2xl font-semibold tracking-wide text-white">
       {{name}}
     </h3>
 
