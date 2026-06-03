@@ -7,7 +7,7 @@
         href="https://donate.raisenow.io/xkmgf"
         target="_blank"
         rel="noopener noreferrer"
-        class="group relative flex items-center justify-between bg-black hover:bg-neutral-950 text-white font-bold pl-6 pr-5 h-12.5 w-35 md:w-40 hover:w-41 transition-all duration-300 ease-out shadow-md border border-neutral-900 no-underline hover:text-green-500"
+        class="group relative flex items-center justify-between bg-[#EFF4E7] text-neutral-800 font-bold pl-6 pr-5 h-12.5 w-35 md:w-40 hover:w-42 transition-all duration-300 ease-out shadow-md border border-neutral-900 no-underline"
     >
       <span class="font-bold uppercase tracking-wider select-none transform translate-y-px text-sm md:text-base">
         Donate
@@ -15,7 +15,7 @@
 
       <div class="relative w-5 h-5 flex items-center justify-center">
         <svg
-            class="absolute w-5 h-5 fill-none stroke-current stroke-[2.5] transition-all duration-300 ease-out group-hover:scale-110 group-hover:fill-green-600"
+            class="absolute w-5 h-5 fill-none stroke-current stroke-[2.5] transition-all duration-300 ease-out group-hover:scale-110 group-hover:fill-neutral-800"
             viewBox="0 0 24 24"
         >
           <path

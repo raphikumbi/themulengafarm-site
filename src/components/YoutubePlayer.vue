@@ -22,7 +22,7 @@ const isPlaying = ref(false)
 </script>
 
 <template>
-  <div class="mx-auto my-6">
+  <div class="px-5">
 
     <button
         @click="isPlaying = true"
@@ -31,23 +31,19 @@ const isPlaying = ref(false)
         width,
         height
       }"
-        class="group relative bg-cover bg-center rounded-[10px] overflow-hidden p-6 text-left shadow-xl  transition-transform duration-300 active:scale-[0.99] cursor-pointer"
-    >
-      <div class="absolute inset-0 bg-linear-to-t from-neutral-950/60 to-neutral-950/40 z-0"></div>
+        class="group relative bg-cover bg-center rounded-[10px] overflow-hidden p-6 text-left shadow-xl  transition-transform duration-300 active:scale-[0.99] cursor-pointer">
+
+      <div class="absolute inset-0 bg-linear-to-t from-neutral-950/40 to-neutral-950/20 z-0"></div>
 
       <div class="relative z-10 h-full flex items-end justify-between">
 
         <div class="flex flex-col gap-5">
 
-          <h3
-              class="text-xl sm:text-2xl font-bold text-white tracking-tight drop-shadow-md"
-          >
+          <h3 class="text-xl sm:text-2xl font-bold text-white tracking-tight drop-shadow-md">
             {{ title }}
           </h3>
 
-          <div
-              class="self-start flex items-center gap-2 px-4 py-2 bg-neutral-200 rounded-lg backdrop-blur-sm text-sm font-semibold text-neutral-800 transition-all duration-300 group-hover:bg-green-500 group-hover:text-slate-950"
-          >
+          <div class="self-start flex items-center gap-2 px-4 py-2 bg-neutral-200 rounded-lg backdrop-blur-sm text-sm font-semibold text-neutral-800 transition-all duration-300 group-hover:bg-green-500 group-hover:text-slate-950">
             <span>Play</span>
 
             <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
@@ -57,9 +53,7 @@ const isPlaying = ref(false)
 
         </div>
 
-        <div
-            class="px-3 py-2 bg-neutral-800 rounded-lg backdrop-blur-sm text-xs font-mono text-neutral-200"
-        >
+        <div class="px-3 py-2 bg-neutral-800 rounded-lg backdrop-blur-sm text-xs font-mono text-neutral-200">
           {{ duration }}
         </div>
 
