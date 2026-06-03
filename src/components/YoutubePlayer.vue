@@ -1,60 +1,98 @@
 <script setup>
 import { ref } from 'vue'
 
-const props = defineProps({
+defineProps({
   id: { type: String, required: true },
   title: { type: String, required: true },
   thumbnail: { type: String, required: true },
-  duration: { type: String, default: '5:00' }
+  duration: { type: String, default: '5:00' },
+
+  width: {
+    type: String,
+    default: '40rem'
+  },
+
+  height: {
+    type: String,
+    default: '16rem'
+  }
 })
 
 const isPlaying = ref(false)
 </script>
 
 <template>
-  <div class="w-full max-w-4xl mx-auto my-6">
+  <div class="mx-auto my-6">
 
     <button
-        v-if="!isPlaying"
         @click="isPlaying = true"
-        :style="{ backgroundImage: `url(${thumbnail})` }"
-        class="group relative w-full h-48 sm:h-64 bg-cover bg-center rounded-2xl overflow-hidden flex flex-col justify-between p-6 text-left shadow-xl border border-slate-800 transition-transform duration-300 active:scale-[0.99]"
+        :style="{
+        backgroundImage: `url(${thumbnail})`,
+        width,
+        height
+      }"
+        class="group relative bg-cover bg-center rounded-[10px] overflow-hidden p-6 text-left shadow-xl  transition-transform duration-300 active:scale-[0.99] cursor-pointer"
     >
-      <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/50 to-slate-950/40 z-0"></div>
+      <div class="absolute inset-0 bg-linear-to-t from-neutral-950/60 to-neutral-950/40 z-0"></div>
 
-      <div class="relative z-10 w-full h-full flex flex-col justify-between items-start">
+      <div class="relative z-10 h-full flex items-end justify-between">
 
-        <div class="my-auto max-w-xl">
-          <h3 class="text-xl sm:text-2xl font-bold text-white tracking-tight drop-shadow-md group-hover:text-emerald-400 transition-colors duration-300">
+        <div class="flex flex-col gap-5">
+
+          <h3
+              class="text-xl sm:text-2xl font-bold text-white tracking-tight drop-shadow-md"
+          >
             {{ title }}
           </h3>
-        </div>
 
-        <div class="w-full flex items-center justify-between mt-auto">
-
-          <div class="flex items-center gap-2 px-4 py-2 bg-slate-900/80 border border-slate-800 rounded-lg backdrop-blur-sm text-sm font-semibold text-slate-200 transition-all duration-300 group-hover:bg-emerald-500 group-hover:text-slate-950 group-hover:border-emerald-400 hover:!bg-emerald-400">
-            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
-              <path d="M8 5v14l11-7z"/>
-            </svg>
+          <div
+              class="self-start flex items-center gap-2 px-4 py-2 bg-neutral-200 rounded-lg backdrop-blur-sm text-sm font-semibold text-neutral-800 transition-all duration-300 group-hover:bg-green-500 group-hover:text-slate-950"
+          >
             <span>Play</span>
-          </div>
 
-          <div class="px-3 py-2 bg-slate-900/80 border border-slate-800 rounded-lg backdrop-blur-sm text-xs font-mono text-slate-400 transition-all duration-300 group-hover:bg-emerald-500 group-hover:text-slate-950 group-hover:border-emerald-400 hover:!bg-emerald-400">
-            {{ duration }}
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+              <path d="M8 5v14l11-7z" />
+            </svg>
           </div>
 
         </div>
+
+        <div
+            class="px-3 py-2 bg-neutral-800 rounded-lg backdrop-blur-sm text-xs font-mono text-neutral-200"
+        >
+          {{ duration }}
+        </div>
+
       </div>
     </button>
 
-    <div v-else class="relative w-full aspect-video bg-black rounded-2xl overflow-hidden shadow-2xl border border-slate-800">
-      <iframe
-          class="absolute top-0 left-0 w-full h-full"
-          :src="`https://www.youtube.com/embed/${id}?autoplay=1`"
-          title="YouTube video player"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-      ></iframe>
+    <div
+        v-if="isPlaying"
+        class="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4"
+        @click.self="isPlaying = false"
+    >
+      <div class="relative w-full max-w-5xl">
+
+        <button
+            @click="isPlaying = false"
+            class="absolute -top-12 right-0 text-white text-4xl font-light hover:text-green-500 cursor-pointer"
+        >
+          ×
+        </button>
+
+        <div
+            class="relative w-full aspect-video bg-black rounded-2xl overflow-hidden shadow-2xl"
+        >
+          <iframe
+              class="absolute inset-0 w-full h-full"
+              :src="`https://www.youtube.com/embed/${id}?autoplay=1`"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+          />
+        </div>
+
+      </div>
     </div>
 
   </div>
