@@ -2,17 +2,17 @@
 import { ref, onMounted } from 'vue'
 import gsap from 'gsap'
 import Header from "./components/Header.vue";
-import TitleBanner from "./components/TitleBanner.vue";
 import OurMission from "./components/OurMission.vue";
 import YoutubePlayer from "./components/YoutubePlayer.vue";
 import SubTitle from "./components/SubTitle.vue";
 import FullScreenPhoto from "./components/FullScreenPhoto.vue";
 import SubSubTitle from "./components/SubSubTitle.vue";
 import MeetTheTeam from "./components/MeetTheTeam.vue";
-import BigTitle from "./components/BigTitle.vue";
 import Footer from "./components/Footer.vue";
+import TitleBanner from "./components/TitleBanner.vue";
 
 const header = ref(null)
+const teamSection = ref(null)
 
 const scrollToSection = () => {
   document.getElementById('header')?.scrollIntoView({
@@ -27,6 +27,25 @@ onMounted(() => {
     duration: 1,
     ease: 'power3.out'
   })
+
+  gsap.fromTo(
+      teamSection.value,
+      {
+        opacity: 0,
+        x: -80,
+      },
+      {
+        opacity: 1,
+        x: 0,
+        duration: 1,
+        ease: 'power3.out',
+        scrollTrigger: {
+          trigger: teamSection.value,
+          start: 'top 80%',
+          toggleActions: 'play none none none',
+        },
+      }
+  )
 })
 </script>
 
@@ -81,7 +100,7 @@ onMounted(() => {
     <br>
 
     <div class="mx-auto max-w-7xl px-4 py-2">
-      <div class="px-5 py-10">
+      <div ref="teamSection" class="px-5 py-10">
         <h1 class="text-4xl md:text-7xl font-semibold tracking-wide text-white">
           Meet the team
         </h1>

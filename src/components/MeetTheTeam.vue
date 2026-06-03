@@ -79,12 +79,12 @@ onMounted(() => {
   gsap.from(els, {
     opacity: 0,
     y: 40,
-    duration: 0.8,
+    duration: 1.5,
     ease: "power3.out",
     stagger: 0.2,
     scrollTrigger: {
       trigger: grid.value,
-      start: "top 85%",
+      start: "top 75%",
       toggleActions: "play none none none",
       once: false
     }
