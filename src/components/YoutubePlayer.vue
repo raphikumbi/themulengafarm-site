@@ -33,7 +33,7 @@ const isPlaying = ref(false)
       }"
         class="group relative bg-cover bg-center rounded-[10px] overflow-hidden p-6 text-left shadow-xl  transition-transform duration-300 active:scale-[0.99] cursor-pointer">
 
-      <div class="absolute inset-0 bg-linear-to-t from-neutral-950/40 to-neutral-950/20 z-0"></div>
+      <div class="absolute inset-0 bg-linear-to-t from-neutral-950/60 to-neutral-950/20 z-0"></div>
 
       <div class="relative z-10 h-full flex items-end justify-between">
 

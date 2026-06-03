@@ -6,6 +6,10 @@ import TitleBanner from "./components/TitleBanner.vue";
 import OurMission from "./components/OurMission.vue";
 import YoutubePlayer from "./components/YoutubePlayer.vue";
 import SubTitle from "./components/SubTitle.vue";
+import FullScreenPhoto from "./components/FullScreenPhoto.vue";
+import SubSubTitle from "./components/SubSubTitle.vue";
+import MeetTheTeam from "./components/MeetTheTeam.vue";
+import BigTitle from "./components/BigTitle.vue";
 
 const header = ref(null)
 
@@ -44,16 +48,48 @@ onMounted(() => {
     <hr class="border-neutral-600" />
 
     <div class="mx-auto max-w-7xl px-4 py-2">
-
       <div class="px-5 py-10">
         <SubTitle title="Latest Updates from Sambia" />
       </div>
+      <YoutubePlayer thumbnail="/video/banner-2025-christmas.jpg" title="Updates 2025" id="75ftg_fsrLQ" duration="3:00" width="100%" height="400px"/>
 
-      <YoutubePlayer thumbnail="/banner.jpg" title="Updates 2025" id="75ftg_fsrLQ" duration="3:00" width="100%" height="400px"/>
+      <div class="px-5 py-10">
+        <SubSubTitle title="Infrastructure Development and Agricultural Expansion Progress" />
+
+        <div class="text-neutral-400 pbs-5 ">
+          <ul class="list-disc pl-5 text-neutral-400">
+            <li>Continued construction of training center (classrooms, doors, facilities)</li>
+            <li>Expansion of water system, including setup for irrigation (water tank planned)</li>
+            <li>Sanitation system connected and improved</li>
+            <li>Ongoing planting of fruit trees (citrus, avocados, bananas)</li>
+            <li>Preparation for 2026 expansion to larger farmland</li>
+            <li>Future needs include fencing, irrigation, and full farm infrastructure</li>
+          </ul>
+        </div>
+
+      </div>
     </div>
 
+
+    <FullScreenPhoto alt="farm" src="/farm-peoples-1500.jpg" />
+  </div>
+
+  <div class="min-h-screen bg-[#171717] text-black">
+
     <br>
     <br>
 
+    <div class="mx-auto max-w-7xl px-4 py-2">
+      <div class="px-5 py-10">
+        <h1 class="text-5xl md:text-7xl font-semibold tracking-wide text-white">
+          Meet the team
+        </h1>
+      </div>
+    </div>
+
+    <MeetTheTeam />
+
+    <br>
+    <br>
   </div>
 </template>
