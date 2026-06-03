@@ -3,7 +3,7 @@ import DonateButton from './DonateButton.vue'
 </script>
 
 <template>
-  <header class="flex items-center justify-between px-6 py-4 sticky top-0 z-50 bg-neutral-100 backdrop-blur-md border-b border-b-neutral-200">
+  <header class="flex items-center justify-between px-6 py-4 sticky top-0 z-50 bg-white backdrop-blur-md border-b border-b-neutral-200">
 
     <div class="flex items-center gap-3">
       <img
