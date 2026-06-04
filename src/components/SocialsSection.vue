@@ -57,7 +57,7 @@ onMounted(() => {
 
 <template>
   <section ref="sectionRef" class="py-12 md:py-14">
-    <div class="mx-auto max-w-7xl px-6">
+    <div class="mx-auto max-w-7xl px-6 overflow-hidden">
 
       <div class="max-w-3xl mb-14">
         <h2 class="text-4xl font-black tracking-wide text-white md:text-6xl text-center md:text-start">

@@ -45,7 +45,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <section ref="sectionRef" class="py-16 md:py-20">
+  <section ref="sectionRef" class="py-16 md:py-20 overflow-hidden">
     <div class="mx-auto max-w-7xl px-6">
 
       <div class="max-w-3xl mb-16">
@@ -62,7 +62,7 @@ onMounted(() => {
         </p>
       </div>
 
-      <div class="grid gap-5 lg:grid-cols-2 items-stretch">
+      <div class="grid gap-5 lg:grid-cols-2 items-stretch overflow-hidden">
 
         <div ref="contentRef" class="flex flex-col justify-between rounded-sm border border-white/10 bg-white/5 p-8 backdrop-blur-md">
           <div>

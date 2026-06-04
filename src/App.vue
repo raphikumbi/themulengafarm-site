@@ -76,31 +76,32 @@ onMounted(() => {
 
 
     <FullScreenPhoto alt="farm" src="/farm-peoples-1500.jpg" />
-  </div>
 
-  <div class="min-h-screen bg-[#191919] text-black">
 
-    <SupportUs />
+    <div class="min-h-screen bg-[#191919] text-black">
 
-    <SeparationLine />
+      <SupportUs />
 
-    <SocialsSection />
+      <SeparationLine />
 
-    <SeparationLine />
+      <SocialsSection />
 
-    <div class="mx-auto max-w-7xl px-4 py-2">
-      <div class="px-5 pt-14 pb-7">
-        <h2 class="mb-6 text-4xl font-black tracking-wide text-white md:text-7xl">
-          Meet the team
-        </h2>
+      <SeparationLine />
+
+      <div class="mx-auto max-w-7xl px-4 py-2">
+        <div class="px-5 pt-14 pb-7">
+          <h2 class="mb-6 text-4xl font-black tracking-wide text-white md:text-7xl">
+            Meet the team
+          </h2>
+        </div>
       </div>
+
+      <MeetTheTeam />
+
+      <br>
+      <br>
+
+      <Footer />
     </div>
-
-    <MeetTheTeam />
-
-    <br>
-    <br>
-
-    <Footer />
   </div>
 </template>
