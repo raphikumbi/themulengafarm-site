@@ -1,9 +1,9 @@
 <script setup>
-import DonateButton from './DonateButton.vue'
+import DonateButton from './buttons/DonateButton.vue'
 </script>
 
 <template>
-  <header class="flex items-center justify-between px-6 py-4 sticky top-0 z-50 bg-[#161B17] backdrop-blur-md border-b border-b-neutral-600">
+  <header class="flex items-center justify-between px-6 py-4 sticky top-0 z-50 bg-[#171717] backdrop-blur-md border-b border-b-neutral-800">
 
     <div class="flex items-center gap-3">
       <img
@@ -11,7 +11,7 @@ import DonateButton from './DonateButton.vue'
           alt="Logo"
           class="h-12 w-12 object-cover rounded-full"
       />
-      <h1 class="text-1xl md:text-4xl font-sans font-semibold tracking-wider text-[#CFE4C7]">
+      <h1 class="text-1xl md:text-4xl font-sans font-semibold tracking-wider text-white">
         THE MULENGA FARM
       </h1>
     </div>

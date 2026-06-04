@@ -7,7 +7,7 @@
         href="https://donate.raisenow.io/xkmgf"
         target="_blank"
         rel="noopener noreferrer"
-        class="group relative flex items-center justify-between bg-[#EFF4E7] text-neutral-800 font-bold pl-6 pr-5 h-12.5 w-35 md:w-40 hover:w-42  transition-all duration-300 ease-out shadow-md border border-neutral-900 no-underline"
+        class="group relative flex items-center justify-between bg-neutral-200 text-neutral-800 font-bold pl-6 pr-5 h-12.5 w-35 md:w-40 hover:w-42 transition-all duration-300 ease-out"
     >
       <span class="font-bold uppercase tracking-wider select-none transform translate-y-px text-sm md:text-base">
         Donate

@@ -3,13 +3,16 @@ import { ref, onMounted } from 'vue'
 import gsap from 'gsap'
 import Header from "./components/Header.vue";
 import OurMission from "./components/OurMission.vue";
-import YoutubePlayer from "./components/YoutubePlayer.vue";
-import SubTitle from "./components/SubTitle.vue";
-import FullScreenPhoto from "./components/FullScreenPhoto.vue";
-import SubSubTitle from "./components/SubSubTitle.vue";
+import YoutubePlayer from "./components/media/YoutubePlayer.vue";
+import SubTitle from "./components/text/SubTitle.vue";
+import FullScreenPhoto from "./components/media/FullScreenPhoto.vue";
+import SubSubTitle from "./components/text/SubSubTitle.vue";
 import MeetTheTeam from "./components/MeetTheTeam.vue";
 import Footer from "./components/Footer.vue";
 import TitleBanner from "./components/TitleBanner.vue";
+import SupportUs from "./components/SupportUs.vue";
+import SocialsSection from "./components/SocialsSection.vue";
+import SeparationLine from "./components/icons/SeparationLine.vue";
 
 const header = ref(null)
 const teamSection = ref(null)
@@ -50,7 +53,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="min-h-screen bg-[#161B17] text-black">
+  <div class="min-h-screen bg-[#161D19] text-black">
 
     <TitleBanner
         image-src="/banner.jpg"
@@ -65,7 +68,7 @@ onMounted(() => {
       <OurMission />
     </div>
 
-    <hr class="border-neutral-600" />
+    <SeparationLine />
 
     <div class="mx-auto max-w-7xl px-4 py-2">
       <div class="px-5 py-10">
@@ -96,14 +99,19 @@ onMounted(() => {
 
   <div class="min-h-screen bg-[#171717] text-black">
 
-    <br>
-    <br>
+    <SupportUs />
+
+    <SeparationLine />
+
+    <SocialsSection />
+
+    <SeparationLine />
 
     <div class="mx-auto max-w-7xl px-4 py-2">
       <div ref="teamSection" class="px-5 py-10">
-        <h1 class="text-4xl md:text-7xl font-semibold tracking-wide text-white">
+        <h2 class="mb-6 text-4xl font-black tracking-wide text-white md:text-7xl">
           Meet the team
-        </h1>
+        </h2>
       </div>
     </div>
 

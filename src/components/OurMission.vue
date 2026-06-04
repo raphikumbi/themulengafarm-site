@@ -1,5 +1,5 @@
 <script setup>
-import SubTitle from "./SubTitle.vue";
+import SubTitle from "./text/SubTitle.vue";
 </script>
 <template>
   <section class="w-full max-w-300 mx-auto py-10">
