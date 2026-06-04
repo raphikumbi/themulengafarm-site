@@ -11,11 +11,22 @@
 ## Run site on Infomaniak:
 
 Steps:
+- on server, clone repo in themulengafarm.org
+
 ```
+cd themulengafarm-site
 npm install vite
 npm run build
 npm install serve
 ```
+
+Befehl zum Ausführen Ihrer Node.js-Anwendung
+```
+cd themulengafarm-site && PORT=3000 npm run start
+```
+
+Befehl zum Aufbau der Anwendung
+cd themulengafarm-site && npm run build
 
 
 ## Update site on Infomaniak
