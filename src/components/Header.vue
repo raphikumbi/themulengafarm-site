@@ -1,5 +1,6 @@
 <script setup>
 import DonateButton from './buttons/DonateButton.vue'
+import DonateButtonSmall from "./buttons/DonateButtonSmall.vue";
 </script>
 
 <template>
@@ -16,7 +17,13 @@ import DonateButton from './buttons/DonateButton.vue'
       </h1>
     </div>
 
-    <DonateButton />
+    <div class="hidden md:block">
+      <DonateButton />
+    </div>
+
+    <div class="block md:hidden">
+      <DonateButtonSmall />
+    </div>
 
   </header>
 </template>
