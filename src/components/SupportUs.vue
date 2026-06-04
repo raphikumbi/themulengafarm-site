@@ -49,10 +49,10 @@ onMounted(() => {
     <div class="mx-auto max-w-7xl px-6">
 
       <div class="max-w-3xl mb-16">
-        <h2 class="mb-6 text-4xl font-black tracking-wide text-white md:text-6xl">
+        <h2 class="mb-6 text-4xl font-black tracking-wide text-white md:text-6xl text-center md:text-start">
           Support Us
         </h2>
-        <p class="text-lg md:text-xl text-zinc-400 leading-relaxed pt-3">
+        <p class="text-lg md:text-xl text-zinc-400 leading-relaxed pt-3 text-center md:text-start">
           We look forward to establishing an economically self-sufficient farm by 2035.
           Until then we need
           <span class="font-bold text-white">
@@ -74,7 +74,7 @@ onMounted(() => {
             </p>
           </div>
 
-          <div class="mt-auto flex justify-start">
+          <div class="mt-auto flex justify-center md:justify-start">
             <RaiseNowButton />
           </div>
         </div>

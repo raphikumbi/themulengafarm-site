@@ -1,5 +1,56 @@
-# Vue 3 + Vite
+# The Mulenga Farm Website
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+### Website for this NGO
+@Created by Raphael Kumbartzki
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+### Build App
+npm install express
+npm run build
+
+### Start App
+node Server.js
+
+### Create App
+npm create vite@latest
+
+### Install i18n
+npm install i18next react-i18next i18next-browser-languagedetector
+
+npm install --save-dev @types/i18next
+
+npm install i18next react-i18next i18next-browser-languagedetector i18next-http-backend
+
+npm install --save-dev @types/react-i18next
+
+## Run site on Infomaniak:
+
+Befehl zum Ausführen Ihrer Node.js-Anwendung
+```
+cd ./website && node server.js && cd ./client && npm run build
+```
+
+Befehl zum Aufbau der Anwendung
+```
+npm install express && cd /client && npm run build
+```
+
+Auf SSH Konsole gehen und in /sites gehen (wo die react app lebt) und dan:
+```
+npm install i18next react-i18next i18next-browser-languagedetector
+npm install --save-dev @types/i18next
+npm install i18next react-i18next i18next-browser-languagedetector i18next-http-backend
+npm install --save-dev @types/react-i18next
+
+npm run build
+```
+
+
+## Update site on Infomaniak
+Gehe zu SSH Konsole, cd in ordner client und mach:
+```
+cd sites/themulengafarm/website/client
+
+git pull
+
+npm run build
+```

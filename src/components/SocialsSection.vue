@@ -56,11 +56,11 @@ onMounted(() => {
 </script>
 
 <template>
-  <section ref="sectionRef" class="py-16 md:py-14">
+  <section ref="sectionRef" class="py-12 md:py-14">
     <div class="mx-auto max-w-7xl px-6">
 
       <div class="max-w-3xl mb-14">
-        <h2 class="text-4xl font-black tracking-wide text-white md:text-6xl">
+        <h2 class="text-4xl font-black tracking-wide text-white md:text-6xl text-center md:text-start">
           Connect With Us
         </h2>
       </div>

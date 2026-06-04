@@ -17,7 +17,7 @@ defineProps({
   >
     <div>
 
-      <div class="mb-6 text-zinc-400 group-hover:text-white transition-colors duration-300">
+      <div class="mb-6 text-zinc-200 group-hover:text-white transition-colors duration-300">
         <component :is="icon" />
       </div>
 

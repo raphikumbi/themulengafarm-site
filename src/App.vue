@@ -30,25 +30,6 @@ onMounted(() => {
     duration: 1,
     ease: 'power3.out'
   })
-
-  gsap.fromTo(
-      teamSection.value,
-      {
-        opacity: 0,
-        x: -80,
-      },
-      {
-        opacity: 1,
-        x: 0,
-        duration: 1,
-        ease: 'power3.out',
-        scrollTrigger: {
-          trigger: teamSection.value,
-          start: 'top 80%',
-          toggleActions: 'play none none none',
-        },
-      }
-  )
 })
 </script>
 
@@ -64,19 +45,19 @@ onMounted(() => {
 
     <Header id="header"/>
 
-    <div class="mx-auto max-w-7xl px-4">
+    <div class="mx-auto max-w-7xl px-4 pb-2">
       <OurMission />
     </div>
 
     <SeparationLine />
 
-    <div class="mx-auto max-w-7xl px-4 py-2">
-      <div class="px-5 py-10">
+    <div class="mx-auto max-w-7xl px-4 pt-8 pb-8">
+      <div class="px-5 py-10 pb-12">
         <SubTitle title="Latest Updates from Sambia" />
       </div>
       <YoutubePlayer thumbnail="/video/banner-2025-christmas.jpg" title="Updates 2025" id="75ftg_fsrLQ" duration="3:00" width="100%" height="400px"/>
 
-      <div class="px-5 py-10">
+      <div class="px-5 py-10 pt-15">
         <SubSubTitle title="Infrastructure Development and Agricultural Expansion Progress" />
 
         <div class="text-neutral-400 pbs-5 ">
@@ -97,7 +78,7 @@ onMounted(() => {
     <FullScreenPhoto alt="farm" src="/farm-peoples-1500.jpg" />
   </div>
 
-  <div class="min-h-screen bg-[#171717] text-black">
+  <div class="min-h-screen bg-[#191919] text-black">
 
     <SupportUs />
 
@@ -108,7 +89,7 @@ onMounted(() => {
     <SeparationLine />
 
     <div class="mx-auto max-w-7xl px-4 py-2">
-      <div ref="teamSection" class="px-5 py-10">
+      <div class="px-5 pt-14 pb-7">
         <h2 class="mb-6 text-4xl font-black tracking-wide text-white md:text-7xl">
           Meet the team
         </h2>

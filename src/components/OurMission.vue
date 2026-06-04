@@ -7,9 +7,9 @@ import SubTitle from "./text/SubTitle.vue";
 
       <div class="lg:col-span-2 space-y-4">
 
-        <SubTitle title="Our Mission" />
+        <SubTitle title="Our Mission" class="md:pb-5 md:pt-5"/>
 
-        <p class="text-base text-neutral-400 leading-relaxed text-justify max-w-3xl">
+        <p class="text-base text-neutral-400 leading-relaxed  max-w-3xl">
           We combat climate change and aspire to see our communities flourishing by enhancing food security and economic opportunities.<br><br>
           Our mission is not just about cultivating crops and trees; it's about cultivating hope. We aim to equip our communities with professional agricultural skills and godly principles. Together, we will not only combat deforestation but also cultivate a brighter, more sustainable future for generations to come.<br><br>
           Through the love and help of God, we embark on a journey of purpose, determined to establish a commercial farm with an orphanage, taking care of those who have been forgotten. This is the journey of TheMulengaFarm. Will you join us?<br><br>
@@ -17,7 +17,7 @@ import SubTitle from "./text/SubTitle.vue";
         </p>
       </div>
 
-      <div class="space-y-3 flex flex-col justify-center max-[1024px]:hidden">
+      <div class="space-y-3 flex flex-col justify-center pt-8 max-[1024px]:hidden">
         <div class="overflow-hidden">
           <img
             src="/logo-500.png"

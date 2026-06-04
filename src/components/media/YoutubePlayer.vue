@@ -1,5 +1,6 @@
 <script setup>
 import { ref } from 'vue'
+import IconPlay from "../icons/IconPlay.vue";
 
 defineProps({
   id: { type: String, required: true },
@@ -33,22 +34,22 @@ const isPlaying = ref(false)
       }"
         class="group relative bg-cover bg-center rounded-[10px] overflow-hidden p-6 text-left shadow-xl  transition-transform duration-300 active:scale-[0.99] cursor-pointer">
 
-      <div class="absolute inset-0 bg-linear-to-t from-neutral-950/60 to-neutral-950/20 z-0"></div>
+      <div class="absolute inset-0 bg-linear-to-t from-neutral-950/75 to-neutral-950/40 z-0"></div>
 
       <div class="relative z-10 h-full flex items-end justify-between">
 
         <div class="flex flex-col gap-5">
 
-          <h3 class="text-xl sm:text-2xl font-bold text-white tracking-tight drop-shadow-md">
+          <h3 class="text-2xl sm:text-3xl font-bold text-white tracking-tight drop-shadow-md">
             {{ title }}
           </h3>
 
           <div class="self-start min-w-25 min-h-12.5 flex items-center gap-2 px-7 py-2 bg-neutral-200 backdrop-blur-sm text-m font-semibold text-neutral-800 transition-all duration-300 group-hover:bg-white group-hover:text-slate-950">
             <span>Play</span>
 
-            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
-              <path d="M8 5v18l12-9z" />
-            </svg>
+            <div class="w-5 h-5 stroke-[1.5] text-neutral-800 transition-all duration-300 ease-out group-hover:scale-110">
+              <IconPlay />
+            </div>
           </div>
 
         </div>
