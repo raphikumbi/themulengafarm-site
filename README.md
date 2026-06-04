@@ -10,9 +10,11 @@
 
 ## Run site on Infomaniak:
 
-Install vite:
+Steps:
 ```
 npm install vite
+npm run build
+npm install serve
 ```
 
 
