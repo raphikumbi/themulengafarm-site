@@ -1,10 +1,15 @@
+<script setup>
+defineProps(['size']);
+</script>
+
 <template>
   <svg
-      class="h-8 w-8"
       fill="none"
-      viewBox="0 0 24 24"
       stroke="currentColor"
       stroke-width="1.5"
+      :width="size || 24"
+      :height="size || 24"
+      viewBox="0 0 24 24"
   >
     <rect
         x="2"

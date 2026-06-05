@@ -1,4 +1,6 @@
 <script setup>
+import IconArrowSimple from "./icons/IconArrowSimple.vue";
+
 defineProps({
   href: { type: String, required: true },
   title: { type: String, required: true },
@@ -9,31 +11,27 @@ defineProps({
 </script>
 
 <template>
-  <a
-      :href="href"
-      target="_blank"
-      rel="noopener noreferrer"
-      class="social-card group flex flex-col justify-between rounded-sm border border-white/10 bg-white/5 p-8 backdrop-blur-md transition-all duration-300 hover:bg-white/10 hover:border-white/20"
-  >
-    <div>
+  <a :href="href"
+     target="_blank"
+     rel="noopener noreferrer"
+     class="social-card group flex flex-col justify-between bg-white/5 p-8 backdrop-blur-md transition-all duration-300 hover:bg-white/10 hover:border-white/20">
 
-      <div class="mb-6 text-zinc-200 group-hover:text-white transition-colors duration-300">
-        <component :is="icon" />
+    <div class="flex flex-row justify-items-start">
+      <div class="flex-2/3">
+        <h3 class="text-xl font-bold uppercase tracking-wider text-white">
+          {{ title }}
+        </h3>
       </div>
 
-      <h3 class="mb-2 text-xl font-bold uppercase tracking-wider text-white">
-        {{ title }}
-      </h3>
-      <p class="text-sm text-zinc-400 leading-relaxed">
-        {{ text }}
-      </p>
+      <div class="flex-1/3 justify-items-end text-zinc-200 group-hover:text-white transition-colors duration-300">
+        <component :is="icon" :size="25" />
+      </div>
     </div>
 
-    <div class="mt-8 flex items-center gap-2 text-xs font-mono tracking-wider text-zinc-500 uppercase group-hover:text-white transition-colors duration-300">
+
+    <div class="mt-5 flex items-center gap-2 text-xs  tracking-wider text-zinc-500 uppercase group-hover:text-white transition-colors duration-300">
       {{ actionText }}
-      <svg class="h-4 w-4 transform transition-transform duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
-      </svg>
+      <IconArrowSimple />
     </div>
   </a>
 </template>

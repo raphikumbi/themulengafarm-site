@@ -4,48 +4,39 @@ import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import RaiseNowButton from "./buttons/RaiseNowButton.vue"
 
-gsap.registerPlugin(ScrollTrigger)
+gsap.registerPlugin(ScrollTrigger);
 
-const sectionRef = ref(null)
-const contentRef = ref(null)
-const bankRef = ref(null)
+const contentRef = ref(null);
+const bankRef = ref(null);
+const grid = ref(null);
 
 onMounted(() => {
-  gsap.fromTo(
-      contentRef.value,
-      { opacity: 0, x: -50 },
-      {
-        opacity: 1,
-        x: 0,
-        duration: 1,
-        ease: 'power3.out',
-        scrollTrigger: {
-          trigger: sectionRef.value,
-          start: 'top 75%',
-        },
-      }
-  )
+  const targets = [contentRef.value, bankRef.value];
 
-  gsap.fromTo(
-      bankRef.value,
-      { opacity: 0, x: 50, scale: 0.98 },
-      {
-        opacity: 1,
-        x: 0,
-        scale: 1,
-        duration: 1,
-        ease: 'power3.out',
-        scrollTrigger: {
-          trigger: sectionRef.value,
-          start: 'top 75%',
-        },
+  const els = targets
+      .filter(Boolean)
+      .map(c => c.$el || c);
+
+  if (els.length > 0) {
+    gsap.from(els, {
+      opacity: 0,
+      y: 40,
+      duration: 3,
+      ease: "power3.out",
+      stagger: 0.2,
+      scrollTrigger: {
+        trigger: grid.value,
+        start: "top 75%",
+        toggleActions: "play none none none",
+        once: false
       }
-  )
-})
+    });
+  }
+});
 </script>
 
 <template>
-  <section ref="sectionRef" class="py-16 md:py-20 overflow-hidden">
+  <section ref="grid" class="py-16 md:py-20 overflow-hidden">
     <div class="mx-auto max-w-7xl px-6">
 
       <div class="max-w-3xl mb-16">
@@ -64,7 +55,7 @@ onMounted(() => {
 
       <div class="grid gap-5 lg:grid-cols-2 items-stretch overflow-hidden">
 
-        <div ref="contentRef" class="flex flex-col justify-between rounded-sm border border-white/10 bg-white/5 p-8 backdrop-blur-md">
+        <div ref="contentRef" class="flex flex-col justify-between bg-white/5 p-8 backdrop-blur-md">
           <div>
             <h3 class="mb-4 text-xl font-bold tracking-wider text-white">
               Support us via RaiseNow
@@ -79,11 +70,11 @@ onMounted(() => {
           </div>
         </div>
 
-        <div ref="bankRef" class="rounded-sm border border-white/10 bg-white/5 p-8 backdrop-blur-md">
+        <div ref="bankRef" class="bg-white/5 p-8 backdrop-blur-md">
           <div class="grid gap-8 md:grid-cols-[160px_1fr] md:items-center h-full">
 
             <div class="flex justify-center">
-              <div class="bg-white p-1 shadow-2xl rounded-sm transform hover:scale-[1.02] transition-transform duration-300">
+              <div class="bg-white p-1 transform hover:scale-[1.02] transition-transform duration-300">
                 <img src="/qrc-raise-now.png" alt="Donation QR Code" class="h-40 w-40 object-contain select-none"/>
               </div>
             </div>
