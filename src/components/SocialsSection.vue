@@ -1,5 +1,5 @@
 <script setup>
-import { ref, onMounted } from 'vue'
+import { ref, onMounted, onBeforeUpdate } from 'vue'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import SocialCard from "./SocialCard.vue"
@@ -10,14 +10,18 @@ import IconYoutube from "./icons/IconYoutube.vue"
 gsap.registerPlugin(ScrollTrigger)
 
 const sectionRef = ref(null)
-const cardsRef = ref(null)
+const cardElements = ref([])
+
+onBeforeUpdate(() => {
+  cardElements.value = []
+})
 
 const socialChannels = [
   {
     href: 'mailto:lionel.kumbartzki@themulengafarm.org',
-    title: 'Email Us',
+    title: 'Email',
     text: 'Get in touch for direct questions or general inquiries.',
-    actionText: 'Send Message',
+    actionText: 'Contact Us',
     icon: IconEmail
   },
   {
@@ -37,21 +41,32 @@ const socialChannels = [
 ]
 
 onMounted(() => {
-  gsap.fromTo(
-      cardsRef.value.querySelectorAll('.social-card'),
-      { opacity: 0, y: 30 },
-      {
-        opacity: 1,
-        y: 0,
-        duration: 0.8,
-        ease: 'power3.out',
-        stagger: 0.12,
-        scrollTrigger: {
-          trigger: sectionRef.value,
-          start: 'top 80%',
+  const targets = cardElements.value
+      .filter(Boolean)
+      .map(card => card.$el || card)
+
+  if (targets.length > 0) {
+    gsap.fromTo(targets,
+        {
+          opacity: 0,
+          yPercent: 40
         },
-      }
-  )
+        {
+          opacity: 1,
+          yPercent: 0,
+          duration: 0.5,
+          ease: "power3.out",
+          stagger: 0.2,
+          clearProps: "transform",
+          scrollTrigger: {
+            trigger: sectionRef.value,
+            start: "top 75%",
+            toggleActions: "play none none none",
+            once: true
+          }
+        }
+    );
+  }
 })
 </script>
 
@@ -65,10 +80,11 @@ onMounted(() => {
         </h2>
       </div>
 
-      <div ref="cardsRef" class="grid gap-6 md:grid-cols-3 mb-4">
+      <div class="grid gap-6 md:grid-cols-3 mb-4">
         <SocialCard
-            v-for="channel in socialChannels"
+            v-for="(channel, index) in socialChannels"
             :key="channel.title"
+            :ref="el => { if (el) cardElements[index] = el }"
             v-bind="channel"
         />
       </div>

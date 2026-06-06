@@ -57,10 +57,10 @@ onMounted(() => {
 
         <div ref="contentRef" class="flex flex-col justify-between bg-white/5 p-8 backdrop-blur-md">
           <div>
-            <h3 class="mb-4 text-xl font-bold tracking-wider text-white">
+            <h3 class="mb-4 text-xl font-bold tracking-wider text-white text-center md:text-start">
               Support us via RaiseNow
             </h3>
-            <p class="mb-8 text-sm md:text-base text-zinc-400 leading-relaxed">
+            <p class="mb-8 text-sm md:text-base text-zinc-400 leading-relaxed text-center md:text-start">
               RaiseNow is a digital fundraising platform that helps nonprofits collect donations, manage donor engagement, and process online payments efficiently.
             </p>
           </div>
@@ -74,12 +74,12 @@ onMounted(() => {
           <div class="grid gap-8 md:grid-cols-[160px_1fr] md:items-center h-full">
 
             <div class="flex justify-center">
-              <div class="bg-white p-1 transform hover:scale-[1.02] transition-transform duration-300">
+              <div class="bg-white p-1 transform">
                 <img src="/qrc-raise-now.png" alt="Donation QR Code" class="h-40 w-40 object-contain select-none"/>
               </div>
             </div>
 
-            <div class="flex flex-col justify-between h-full">
+            <div class="flex flex-col justify-between h-full text-center md:text-start">
               <div>
                 <h3 class="mb-4 text-xl font-bold tracking-wider text-white">
                   Bank Transfer

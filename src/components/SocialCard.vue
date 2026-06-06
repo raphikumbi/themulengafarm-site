@@ -16,14 +16,14 @@ defineProps({
      rel="noopener noreferrer"
      class="social-card group flex flex-col justify-between bg-white/5 p-8 backdrop-blur-md transition-all duration-300 hover:bg-white/10 hover:border-white/20">
 
-    <div class="flex flex-row justify-items-start">
-      <div class="flex-2/3">
+    <div class="flex flex-row justify-between">
+      <div>
         <h3 class="text-xl font-bold uppercase tracking-wider text-white">
           {{ title }}
         </h3>
       </div>
 
-      <div class="flex-1/3 justify-items-end text-zinc-200 group-hover:text-white transition-colors duration-300">
+      <div class="text-zinc-200 group-hover:text-white transition-colors duration-300">
         <component :is="icon" :size="25" />
       </div>
     </div>
