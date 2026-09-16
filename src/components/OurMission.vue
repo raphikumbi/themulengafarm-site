@@ -9,12 +9,14 @@ import SubTitle from "./text/SubTitle.vue";
 
         <SubTitle title="Our Mission" class="md:pb-5 md:pt-5"/>
 
-        <p class="text-base text-neutral-400 leading-relaxed  max-w-3xl">
-          We combat climate change and aspire to see our communities flourishing by enhancing food security and economic opportunities.<br><br>
-          Our mission is not just about cultivating crops and trees; it's about cultivating hope. We aim to equip our communities with professional agricultural skills and godly principles. Together, we will not only combat deforestation but also cultivate a brighter, more sustainable future for generations to come.<br><br>
-          Through the love and help of God, we embark on a journey of purpose, determined to establish a commercial farm with an orphanage, taking care of those who have been forgotten. This is the journey of TheMulengaFarm. Will you join us?<br><br>
-          <b>TheMulengaFarm ORG is a registered swissbased NGO, funding and supporting the works of the MulengaFarm in Zambia, Ndola.</b><br><br>
+        <p class="text-base text-zinc-200 leading-relaxed max-w-3xl text-justify md:text-left ">
+          TheMulengaFarm is becoming a commercial farm in Ndola, Zambia, cultivating sustainable agriculture by providing skills training and future employment opportunities for rural communities.<br>
+          Our vision is to see that, through our farming activities, orphanages are supported to empower youth and vulnerable people.<br>
+          We operate regenerative and sustainable citrus and crop farming, combined with our teaching activities at our Community Training Center in Ndola.<br>
+          By doing so, we promote rural agricultural development, improve food security and diversification, and combat climate change by actively working against deforestation.<br>
+          Our mission is not only to cultivate crops and trees but also to generate hope, create future perspectives, especially among the youth, and, by doing so, share the love of God. We look forward to seeing the agricultural sector in Zambia change.<br>
         </p>
+
       </div>
 
       <div class="space-y-3 flex flex-col justify-center pt-8 max-[1024px]:hidden">
@@ -32,6 +34,12 @@ import SubTitle from "./text/SubTitle.vue";
           FARMING GOD'S WAY
         </h3>
       </div>
+
+    </div>
+
+    <div class="text-base text-zinc-200 leading-relaxed max-w-7xl text-justify md:text-left">
+      <b>TheMulengaFarm (NGO)</b> is a Zambia-based NGO operating farming activities (tree nursery and fields) and teaching programs at our Community Training Center in the neighborhoods of Ndola.<br>
+      <b>TheMulengaFarm (ORG)</b> is a Swiss-based registered NGO that funds and supports the work of TheMulengaFarm in Ndola, Zambia.
 
     </div>
   </section>

@@ -30,44 +30,37 @@ const team = [
     src: "/team/portrait-jameson.jpg",
     name: "Jameson",
     func: "Founder, Director",
-    loc: "NDOLA, ZAMBIA",
-    desc: "I’m passionate about my sustainable farming career, and I love transforming communities, especially supporting less privileged people in society through skills and training. I have a calling in farming, and I look forward to establishing God’s kingdom through farming God’s way. I believe that if we take care of nature, nature will take care of us."
+    loc: "NDOLA, ZAMBIA"
   },
   {
     src: "/team/portrait-lionel.jpg",
     name: "Lionel",
     func: "Founder, Networking",
-    loc: "BASEL, SWITZERLAND",
-    desc: "I look forward to seeing our culture and society develop into a more human-centered future, where sense, solidarity, communion, and beauty form its core. I love people and traveling, and I enjoy seeing the love of God made practical, starting from the ground up with a shift in agriculture."
+    loc: "BASEL, SWITZERLAND"
   },
   {
     src: "/team/portrait-louis.jpg",
     name: "Louis",
     func: "Media, Architect",
-    loc: "STRASBOURG, FRANCE",
-    desc: "I’m passionate about my career in media, and I love capturing stories through photography and visual art. I enjoy transforming perspectives and sharing moments that highlight people, culture, and everyday life, especially by giving a voice and visibility to those who are often unseen. I feel called to use media as a tool for a positive impact."
+    loc: "STRASBOURG, FRANCE"
   },
-
   {
     src: "/team/portrait-sebastian.jpg",
     name: "Sebastian",
     func: "Finances",
-    loc: "ZÜRICH, SWITZERLAND",
-    desc: "..."
+    loc: "ZÜRICH, SWITZERLAND"
   },
   {
     src: "/team/portrait-raphael.jpg",
     name: "Raphael",
     func: "IT, Media",
-    loc: "BASEL, SWITZERLAND",
-    desc: "..."
+    loc: "BASEL, SWITZERLAND"
   },
   {
     src: "/team/portrait-francois.jpg",
     name: "François",
     func: "Landscape Architect",
-    loc: "BUSCHWILER, FRANCE",
-    desc: "..."
+    loc: "ALSACE, FRANCE"
   }
 ];
 

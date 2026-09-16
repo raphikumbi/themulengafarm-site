@@ -36,7 +36,7 @@ import IconYoutube from "./icons/IconYoutube.vue";
       </div>
 
       <p class="text-sm text-neutral-200">
-        © 2024 The Mulenga Farm. All Rights Reserved.
+        © 2026 The Mulenga Farm. All Rights Reserved.
       </p>
 
     </div>

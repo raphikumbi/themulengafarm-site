@@ -1,17 +1,25 @@
 @import "tailwindcss";
 @import url('https://cdn.jsdelivr.net/npm/geist@1.3.0/dist/core.css');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Manrope:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Sora:wght@300;400;500;600;700;800&display=swap');
 
 @tailwind utilities;
 
 @theme {
-    --font-sans: 'Geist Sans', 'Inter', system-ui, sans-serif;
-    --font-mono: 'Geist Mono', monospace;
+    --font-jakarta: 'Plus Jakarta Sans', sans-serif;
+    --color-accent: #5FA934;
+    --color-accent-bright: #61AB34;
+    --color-secondary: #2761EA;
+
+    --color-border-default: #d4d4d4;
+    --color-border-hover: #848484;
+
+    --container-content: 1500px;
+    --radius-custom: 0px;
 }
 
 html, body {
     background-color: #0a0a0a;
     color: #f8fafc;
-
     scroll-behavior: smooth;
 }

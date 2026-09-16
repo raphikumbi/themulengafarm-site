@@ -6,7 +6,6 @@ export default {
     theme: {
         extend: {
             colors: {
-                accent: "#20ac29",
             },
         },
     },

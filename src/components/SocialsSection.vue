@@ -76,7 +76,7 @@ onMounted(() => {
 
       <div class="max-w-3xl mb-14">
         <h2 class="text-4xl font-black tracking-wide text-white md:text-6xl text-center md:text-start">
-          Connect With Us
+          Connect with Us
         </h2>
       </div>
 

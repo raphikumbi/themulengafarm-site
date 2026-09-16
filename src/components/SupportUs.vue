@@ -39,23 +39,23 @@ onMounted(() => {
   <section ref="grid" class="py-16 md:py-20 overflow-hidden">
     <div class="mx-auto max-w-7xl px-6">
 
-      <div class="max-w-3xl mb-16">
+      <div class="max-w-5xl mb-16">
         <h2 class="mb-6 text-4xl font-black tracking-wide text-white md:text-6xl text-center md:text-start">
           Support Us
         </h2>
         <p class="text-lg md:text-xl text-zinc-400 leading-relaxed pt-3 text-center md:text-start">
-          We look forward to establishing an economically self-sufficient farm by 2035.
-          Until then we need
+          We look forward to establishing an economically self-sufficient farm followed by an orphanage by 2050.<br>
+          We need
           <span class="font-bold text-white">
-            CHF 3,500 per year
+            CHF 5'000 per year
           </span>
-          to keep the project growing.
+          to keep the project running.
         </p>
       </div>
 
       <div class="grid gap-5 lg:grid-cols-2 items-stretch overflow-hidden">
 
-        <div ref="contentRef" class="flex flex-col justify-between bg-white/5 p-8 backdrop-blur-md">
+        <div ref="contentRef" class="flex flex-col justify-between bg-white/5 p-8">
           <div>
             <h3 class="mb-4 text-xl font-bold tracking-wider text-white text-center md:text-start">
               Support us via RaiseNow
@@ -75,7 +75,7 @@ onMounted(() => {
 
             <div class="flex justify-center">
               <div class="bg-white p-1 transform">
-                <img src="/qrc-raise-now.png" alt="Donation QR Code" class="h-40 w-40 object-contain select-none"/>
+                <img src="/qrc-bank.png" alt="Donation QR Code" class="h-40 w-40 object-contain select-none"/>
               </div>
             </div>
 

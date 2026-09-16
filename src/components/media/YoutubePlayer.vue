@@ -23,8 +23,7 @@ const isPlaying = ref(false)
 </script>
 
 <template>
-  <div class="px-5">
-
+  <div>
     <button
         @click="isPlaying = true"
         :style="{
@@ -32,29 +31,28 @@ const isPlaying = ref(false)
         width,
         height
       }"
-        class="group relative bg-cover bg-center rounded-[10px] overflow-hidden p-6 text-left shadow-xl  transition-transform duration-300 active:scale-[0.99] cursor-pointer">
+        class="group relative bg-cover bg-center rounded-custom overflow-hidden p-6 text-left transition-transform duration-300 active:scale-[0.99] cursor-pointer">
 
-      <div class="absolute inset-0 bg-linear-to-t from-neutral-950/75 to-neutral-950/40 z-0"></div>
+      <div class="absolute inset-0 bg-linear-to-t from-neutral-950/85 to-neutral-950/20 z-0"></div>
 
       <div class="relative z-10 h-full flex items-end justify-between">
 
         <div class="flex flex-col gap-5">
 
-          <h3 class="text-2xl sm:text-3xl font-bold text-white tracking-tight drop-shadow-md">
+          <h3 class="pb-2 md:text-8xl text-5xl font-bold text-white">
             {{ title }}
           </h3>
 
-          <div class="self-start min-w-25 min-h-12.5 flex items-center gap-2 px-7 py-2 bg-neutral-200 backdrop-blur-sm text-m font-semibold text-neutral-800 transition-all duration-300 group-hover:bg-white group-hover:text-slate-950">
+          <div class="flex items-center px-6 w-28 h-12 gap-3 bg-white text-m font-semibold text-black transition-all duration-300 group-hover:w-35 justify-between">
             <span>Play</span>
-
-            <div class="w-5 h-5 stroke-[1.5] text-neutral-800 transition-all duration-300 ease-out group-hover:scale-110">
+            <div class="w-5 h-5 stroke-[1.25] text-black">
               <IconPlay />
             </div>
           </div>
 
         </div>
 
-        <div class="px-3 py-2 bg-neutral-800 backdrop-blur-sm text-xs font-mono text-neutral-200">
+        <div class="px-3 py-2 bg-neutral-800 text-xs font-mono text-neutral-200">
           {{ duration }}
         </div>
 
@@ -70,13 +68,13 @@ const isPlaying = ref(false)
 
         <button
             @click="isPlaying = false"
-            class="absolute -top-12 right-0 text-white text-4xl font-light hover:text-green-500 cursor-pointer"
+            class="absolute -top-12 right-0 text-white text-4xl font-light hover:text-zinc-200 cursor-pointer"
         >
           ×
         </button>
 
         <div
-            class="relative w-full aspect-video bg-black rounded-2xl overflow-hidden shadow-2xl"
+            class="relative aspect-video"
         >
           <iframe
               class="absolute inset-0 w-full h-full"
