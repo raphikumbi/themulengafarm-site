@@ -29,7 +29,7 @@ const goalReached = props.current === props.goal
         </div>
 
         <span
-            class="rounded-[2px] px-3 py-1 text-xs font-semibold"
+            class="rounded-xs px-3 py-1 text-xs font-semibold"
             :class="[
               goalReached ? 'bg-green-100' : 'bg-blue-100' ,
               goalReached ? 'text-green-600' : 'text-secondary'
