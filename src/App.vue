@@ -35,7 +35,7 @@ import TeamMemberCard from "./components/TeamMemberCard.vue";
       <div class="grid grid-cols-1 lg:grid-cols-3 items-start">
 
         <div class="lg:col-span-2 space-y-4 ">
-          <h1 class="text-5xl md:text-6xl font-semibold tracking-wide text-black">
+          <h1 class="text-5xl md:text-7xl font-semibold tracking-wide text-black">
             Our Mission
           </h1>
           <p class="text-base text-black leading-7 text-justify md:text-left pt-5">
@@ -181,7 +181,7 @@ import TeamMemberCard from "./components/TeamMemberCard.vue";
       Current Projects and Founding
     -->
     <section id="current-projects" class="max-w-content mx-auto pl-15 pr-15 p-20">
-      <h2 class="text-6xl font-semibold pt-5 pb-10">Current Projects</h2>
+      <h2 class="text-7xl font-semibold pt-5 pb-10">Current Projects</h2>
 
       <div class="grid grid-cols-1 gap-5 lg:grid-cols-2">
         <ProjectItemCard
@@ -273,12 +273,12 @@ import TeamMemberCard from "./components/TeamMemberCard.vue";
     <!--
       Meet the Team
     -->
-    <section id="team" class="max-w-content mx-auto pl-15 pr-15 p-20">
+    <section id="team" class="max-w-content mx-auto pl-15 pr-15">
 
-      <h2 class="text-6xl font-semibold pt-5 pb-10">Meet the Team</h2>
+      <h2 class="text-7xl font-semibold pt-5 pb-10">Meet the Team</h2>
 
       <div class="flex justify-center">
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full px-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
 
           <TeamMemberCard
               imgSrc="/team/portrait-jameson.jpg"

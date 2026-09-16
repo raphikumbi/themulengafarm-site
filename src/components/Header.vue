@@ -4,7 +4,7 @@ import DonateButtonSmall from "./buttons/DonateButtonSmall.vue";
 </script>
 
 <template>
-  <header class="flex items-center justify-between px-6 py-4 sticky top-0 z-50 bg-white border-b border-b-neutral-400">
+  <header class="flex items-center justify-between px-6 py-4 sticky top-0 z-50 bg-zinc-50 border-b border-border-default">
     <div class="flex items-center gap-3">
 
       <img
