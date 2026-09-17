@@ -7,6 +7,7 @@ defineProps({
   loc: String,
   desc: String
 });
+
 </script>
 
 <template>
@@ -18,19 +19,19 @@ defineProps({
         class="w-full h-max object-cover"
     />
 
-    <h3 class="text-lg md:text-2xl font-semibold tracking-wide text-black">
+    <h3 class="text-lg md:text-2xl font-semibold tracking-wide text-text-strong pt-1">
       {{name}}
     </h3>
 
-    <h3 class="text-sm font-medium text-neutral-700 -mt-3">
+    <h3 class="text-sm font-medium text-text-midd -mt-3">
       {{func}}
     </h3>
 
-    <h3 class="text-sm font-light text-neutral-500">
+    <h3 class="text-sm font-light text-text-soft">
       {{loc}}
     </h3>
 
-    <p class="text-sm font-light text-neutral-500 text-justify">
+    <p class="text-sm font-light text-text-soft text-justify">
       {{desc}}
     </p>
   </div>

@@ -6,11 +6,12 @@ import YoutubePlayer from "./components/media/YoutubePlayer.vue";
 import RaiseNowButton from "./components/buttons/RaiseNowButton.vue";
 import ProjectItemCard from "./components/ProjectItemCard.vue";
 import TeamMemberCard from "./components/TeamMemberCard.vue";
+import KeyStatements from "./components/KeyStatements.vue";
 
 </script>
 
 <template>
-  <div class="min-h-screen bg-zinc-50 text-black">
+  <div class="min-h-screen bg-zinc-50 text-black font-jakarta">
 
     <!--
       Header bar of the site
@@ -35,10 +36,10 @@ import TeamMemberCard from "./components/TeamMemberCard.vue";
       <div class="grid grid-cols-1 lg:grid-cols-3 items-start">
 
         <div class="lg:col-span-2 space-y-4 ">
-          <h1 class="text-5xl md:text-7xl font-semibold tracking-wide text-black">
+          <h1 class="text-5xl md:text-7xl font-semibold tracking-wide text-text-strong">
             Our Mission
           </h1>
-          <p class="text-base text-black leading-7 text-justify md:text-left pt-5">
+          <p class="text-base text-text-midd leading-7 text-justify md:text-left pt-5">
             TheMulengaFarm is becoming a commercial farm in Ndola, Zambia, cultivating sustainable agriculture by providing skills training and future employment opportunities for rural communities.<br>
             Our vision is to see that, through our farming activities, orphanages are supported to empower youth and vulnerable people.<br>
             We operate regenerative and sustainable citrus and crop farming, combined with our teaching activities at our Community Training Center in Ndola.<br>
@@ -57,14 +58,14 @@ import TeamMemberCard from "./components/TeamMemberCard.vue";
 
           </div>
 
-          <h3 class="text-sm font-bold uppercase tracking-widest text-[#A88058]  text-center">
+          <h3 class="text-sm font-bold uppercase tracking-widest text-[#A88058] text-center">
             THE MULENGA PROJECT<br>
             FARMING GOD'S WAY
           </h3>
         </div>
       </div>
 
-      <div class="pt-12 text-justify md:text-left">
+      <div class="pt-12 text-justify md:text-left text-text-midd">
         <p>
           <b>TheMulengaFarm (NGO)</b> is a Zambia-based NGO operating farming activities (tree nursery and fields) and teaching programs at our Community Training Center in the neighborhoods of Ndola.<br>
           <b>TheMulengaFarm (ORG)</b> is a Swiss-based registered NGO that funds and supports the work of TheMulengaFarm in Ndola, Zambia.
@@ -73,94 +74,33 @@ import TeamMemberCard from "./components/TeamMemberCard.vue";
     </section>
 
     <!--
-      Socials and Support section
+      Key Statements
     -->
-    <section class=" max-w-content mx-auto pl-10 pr-10">
-      <div class="flex flex-row max-[1024px]:flex-col gap-5 h-full p-5">
+    <section class="max-w-content mx-auto pl-10 pr-10 md:pl-25 md:pr-25 pt-5 pb-10">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <KeyStatements
+            number="1"
+            title="Sustainable Agriculture"
+            text="To promote sustainable and regenerative agriculture, mainly through citrus and crop farming in Zambia."
+        />
 
-        <!--
-          Twint
-        -->
-        <div class="border border-border-default flex-1 p-5 transition-all duration-300 hover:border-border-hover">
-          <h3 class="mb-4 text-xl font-bold tracking-wider text-black text-center md:text-start">
-            Support us via Twint
-          </h3>
+        <KeyStatements
+            number="2"
+            title="Food Security & Rural Development"
+            text="To support food security and rural development by establishing agricultural infrastructure and demonstration farms."
+        />
 
-          <!--
-            QR Code
-          -->
-          <div class="flex justify-center md:justify-start">
-            <div class="p-5" >
-              <img src="/qrcode-twint.png" alt="Twint QR Code" class="h-31 w-31 object-contain select-none"/>
-            </div>
-          </div>
-        </div>
+        <KeyStatements
+            number="3"
+            title="Environmental Protection"
+            text="To promote environmental protection and prevent deforestation."
+        />
 
-        <!--
-          Bank Details
-        -->
-        <div class="border border-border-default flex-1 p-5 transition-all duration-300 hover:border-border-hover">
-          <h3 class="mb-4 text-xl font-bold tracking-wider text-black text-center md:text-start">
-            Bank Transfer
-          </h3>
-
-          <div class="flex flex-row ">
-
-            <!--
-              QR Code
-            -->
-            <div class="flex-1 flex items-center max-w-40">
-              <div class="pr-5">
-                <img src="/qrc-bank.png" alt="Donation QR Code" class="h-31 w-31 object-contain select-none"/>
-              </div>
-            </div>
-
-            <!--
-              Details
-            -->
-            <div class="flex-1">
-              <div class="space-y-2 text-sm text-zinc-700">
-                <p>
-                  <b>IBAN:</b> CH34 0076 9440 8377 7200 1
-                </p>
-                <p>
-                  <b>BANK:</b> BLKBCH22
-                </p>
-                <p>
-                  <b>Clearing Nr:</b> 769
-                </p>
-                <p>
-                  <b>Street:</b> Reinacherstrasse 126
-                </p>
-                <p>
-                  <b>City:</b> Basel, CH-4053
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!--
-          Donate Raise Now
-        -->
-        <div class="border border-border-default flex-1 p-5 transition-all duration-300 hover:border-border-hover">
-
-          <div class="flex flex-col justify-between ">
-            <h3 class="mb-4 text-xl font-bold tracking-wider text-black text-center md:text-start">
-              Support us via RaiseNow
-            </h3>
-
-            <p class="mb-5 text-sm md:text-base text-zinc-700 leading-relaxed text-center md:text-start">
-              RaiseNow is a digital fundraising platform that helps nonprofits collect donations, manage donor engagement, and process online payments efficiently.
-            </p>
-          </div>
-
-          <div class="mt-auto flex justify-center md:justify-start">
-            <RaiseNowButton />
-          </div>
-
-        </div>
-
+        <KeyStatements
+            number="4"
+            title="Knowledge & Empowerment"
+            text="To promote knowledge transfer, skills training and community empowerment to support vulnerable communities, including youth and orphans."
+        />
       </div>
     </section>
 
@@ -174,8 +114,45 @@ import TeamMemberCard from "./components/TeamMemberCard.vue";
           id="75ftg_fsrLQ"
           duration="3:00"
           width="100%"
-          height="400px"/>
+          height="400px"
+      />
+
+      <h2 class="text-2xl font-semibold text-text-strong pt-10 pb-5">Infrastructure Development and Agricultural Expansion Progress</h2>
+
+
+      <ul class="list-disc pl-5 text-text-soft">
+        <li>Expansion of water system, including setup for irrigation</li>
+        <li>Sanitation system connected</li>
+        <li>Ongoing planting of fruit trees (citrus, avocados, bananas)</li>
+        <li>Preparation for expansion to larger farmland</li>
+        <li>Legal procedures for NGO structures in Zambia</li>
+      </ul>
     </section>
+
+    <div class="pt-10">
+      <picture>
+        <!-- Mobile -->
+        <source
+            media="(max-width: 640px)"
+            srcset="/farm-peoples-800.jpg"
+            class="w-full max-h-300 object-cove"
+        />
+
+        <!-- Tablet -->
+        <source
+            media="(max-width: 1024px)"
+            srcset="/farm-peoples-1500.jpg"
+            class="w-full max-h-300 object-cove"
+        />
+
+        <!-- Desktop -->
+        <img
+            src="/farm-peoples-2500.jpg"
+            alt="Farm and Peoples"
+            class="w-full max-h-300 object-cove"
+        />
+      </picture>
+    </div>
 
     <!--
       Current Projects and Founding
@@ -271,11 +248,105 @@ import TeamMemberCard from "./components/TeamMemberCard.vue";
     </section>
 
     <!--
+      Support section
+    -->
+    <section id="support" class=" max-w-content mx-auto pl-15 pr-15">
+      <h2 class="text-7xl font-semibold pt-0 pb-10">Support Us</h2>
+
+      <div class="flex flex-row max-[1024px]:flex-col gap-5 h-full">
+
+        <!--
+          Twint
+        -->
+        <div class="border border-border-default flex-1 p-5 transition-all duration-300 hover:border-border-hover">
+          <h3 class="mb-4 text-xl font-bold tracking-wider text-black text-center md:text-start">
+            Support us via Twint
+          </h3>
+
+          <!--
+            QR Code
+          -->
+          <div class="flex justify-center md:justify-start">
+            <div class="p-5" >
+              <img src="/qrcode-twint.png" alt="Twint QR Code" class="h-31 w-31 object-contain select-none"/>
+            </div>
+          </div>
+        </div>
+
+        <!--
+          Bank Details
+        -->
+        <div class="border border-border-default flex-1 p-5 transition-all duration-300 hover:border-border-hover">
+          <h3 class="mb-4 text-xl font-bold tracking-wider text-black text-center md:text-start">
+            Bank Transfer
+          </h3>
+
+          <div class="flex flex-row ">
+
+            <!--
+              QR Code
+            -->
+            <div class="flex-1 flex items-center max-w-40">
+              <div class="pr-5">
+                <img src="/qrc-bank.png" alt="Donation QR Code" class="h-31 w-31 object-contain select-none"/>
+              </div>
+            </div>
+
+            <!--
+              Details
+            -->
+            <div class="flex-1">
+              <div class="space-y-2 text-sm text-zinc-700">
+                <p>
+                  <b>IBAN:</b> CH34 0076 9440 8377 7200 1
+                </p>
+                <p>
+                  <b>BANK:</b> BLKBCH22
+                </p>
+                <p>
+                  <b>Clearing Nr:</b> 769
+                </p>
+                <p>
+                  <b>Street:</b> Reinacherstrasse 126
+                </p>
+                <p>
+                  <b>City:</b> Basel, CH-4053
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--
+          Donate Raise Now
+        -->
+        <div class="border border-border-default flex-1 p-5 transition-all duration-300 hover:border-border-hover">
+
+          <div class="flex flex-col justify-between ">
+            <h3 class="mb-4 text-xl font-bold tracking-wider text-black text-center md:text-start">
+              Support us via RaiseNow
+            </h3>
+
+            <p class="mb-5 text-sm md:text-base text-zinc-700 leading-relaxed text-center md:text-start">
+              RaiseNow is a digital fundraising platform that helps nonprofits collect donations, manage donor engagement, and process online payments efficiently.
+            </p>
+          </div>
+
+          <div class="mt-auto flex justify-center md:justify-start">
+            <RaiseNowButton />
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!--
       Meet the Team
     -->
     <section id="team" class="max-w-content mx-auto pl-15 pr-15">
 
-      <h2 class="text-7xl font-semibold pt-5 pb-10">Meet the Team</h2>
+      <h2 class="text-7xl font-semibold pt-15 pb-10">Meet the Team</h2>
 
       <div class="flex justify-center">
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full">

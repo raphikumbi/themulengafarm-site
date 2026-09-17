@@ -5,7 +5,7 @@ import IconHeart from "../icons/IconHeart.vue";
 <template>
   <div class="flex justify-center">
     <a
-        href="https://donate.raisenow.io/xkmgf"
+        href="#support"
         class="group flex items-center justify-between bg-accent text-neutral-800 font-bold pl-6 pr-5 h-12.5 w-35 md:w-40 hover:w-42 transition-all duration-300 ease-out"
     >
       <span class="font-bold uppercase tracking-wider translate-y-px text-sm md:text-base text-white">

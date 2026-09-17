@@ -7,12 +7,19 @@
 
 @theme {
     --font-jakarta: 'Plus Jakarta Sans', sans-serif;
+
+    --color-page-bg: #fafafa;
+
     --color-accent: #5FA934;
     --color-accent-bright: #61AB34;
     --color-secondary: #2761EA;
 
     --color-border-default: #d4d4d4;
     --color-border-hover: #848484;
+
+    --color-text-soft: #737373;
+    --color-text-midd: #404040;
+    --color-text-strong: #000000;
 
     --container-content: 1500px;
     --radius-custom: 0px;
