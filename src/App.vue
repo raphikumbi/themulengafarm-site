@@ -10,6 +10,13 @@ import KeyStatements from "./components/KeyStatements.vue";
 
 </script>
 
+<!-- GLOBAL VALUES
+            Desktop | Tablet | Phone
+main-title:   7xl   |   7xl  |  4xl
+padding:       15   |    15  |   5
+
+-->
+
 <template>
   <div class="min-h-screen bg-zinc-50 text-black font-jakarta">
 
@@ -23,23 +30,29 @@ import KeyStatements from "./components/KeyStatements.vue";
     -->
     <section id="hero">
       <img
-          src="/banner.jpg"
-          alt="title"
+          src="/hero-1500.jpg"
+          srcset="
+            /hero-800.jpg 800w,
+            /hero-1500.jpg 1500w,
+            /hero-2500.jpg 2500w
+          "
+          sizes="100vw"
+          alt="Hero"
+          loading="lazy"
           class="w-full max-h-175 object-cover"
-      />
+      >
     </section>
 
     <!--
       Our Mission section
     -->
-    <section id="our-mission" class="max-w-content mx-auto p-5 pt-10 md:p-15">
+    <section id="our-mission" class="max-w-content mx-auto pl-5 pr-5 md:pl-15 md:pr-15 pt-15 pb-0">
       <div class="grid grid-cols-1 lg:grid-cols-3 items-start">
 
         <div class="lg:col-span-2 space-y-4 ">
-          <h1 class="text-5xl md:text-7xl font-semibold tracking-wide text-text-strong">
-            Our Mission
-          </h1>
-          <p class="text-base text-text-midd leading-7 text-justify md:text-left pt-5">
+          <h1 class="text-4xl md:text-7xl font-semibold tracking-wide text-text-strong text-center md:text-left">Our Mission</h1>
+
+          <p class="text-base text-text-midd leading-8 text-justify md:text-left pt-5">
             TheMulengaFarm is becoming a commercial farm in Ndola, Zambia, cultivating sustainable agriculture by providing skills training and future employment opportunities for rural communities.<br>
             Our vision is to see that, through our farming activities, orphanages are supported to empower youth and vulnerable people.<br>
             We operate regenerative and sustainable citrus and crop farming, combined with our teaching activities at our Community Training Center in Ndola.<br>
@@ -65,7 +78,7 @@ import KeyStatements from "./components/KeyStatements.vue";
         </div>
       </div>
 
-      <div class="pt-12 text-justify md:text-left text-text-midd">
+      <div class="pt-6 md:pt-7 leading-8 text-text-midd text-justify">
         <p>
           <b>TheMulengaFarm (NGO)</b> is a Zambia-based NGO operating farming activities (tree nursery and fields) and teaching programs at our Community Training Center in the neighborhoods of Ndola.<br>
           <b>TheMulengaFarm (ORG)</b> is a Swiss-based registered NGO that funds and supports the work of TheMulengaFarm in Ndola, Zambia.
@@ -76,7 +89,7 @@ import KeyStatements from "./components/KeyStatements.vue";
     <!--
       Key Statements
     -->
-    <section class="max-w-content mx-auto pl-10 pr-10 md:pl-25 md:pr-25 pt-5 pb-10">
+    <section class="max-w-content mx-auto pl-10 pr-10 pt-15 pb-15 md:pl-25 md:pr-25 md:pb-10">
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         <KeyStatements
             number="1"
@@ -107,7 +120,7 @@ import KeyStatements from "./components/KeyStatements.vue";
     <!--
       Latest Update Section
     -->
-    <section id="latest-update" class="max-w-content pl-15 pr-15 pt-10 mx-auto">
+    <section id="latest-update" class="max-w-content mx-auto pl-5 pr-5 md:pl-15 md:pr-15 pt-3 md:pt-10">
       <YoutubePlayer
           thumbnail="/video/banner-2025-christmas.jpg"
           title="Latest Update"
@@ -117,10 +130,9 @@ import KeyStatements from "./components/KeyStatements.vue";
           height="400px"
       />
 
-      <h2 class="text-2xl font-semibold text-text-strong pt-10 pb-5">Infrastructure Development and Agricultural Expansion Progress</h2>
+      <h2 class="text-lg md:text-2xl text-center md:text-left font-semibold text-text-strong pt-5 md:pt-10 pb-5">Infrastructure Development and Agricultural Expansion Progress</h2>
 
-
-      <ul class="list-disc pl-5 text-text-soft">
+      <ul class="list-disc pl-5 text-text-soft text-sm md:text-base">
         <li>Expansion of water system, including setup for irrigation</li>
         <li>Sanitation system connected</li>
         <li>Ongoing planting of fruit trees (citrus, avocados, bananas)</li>
@@ -130,35 +142,25 @@ import KeyStatements from "./components/KeyStatements.vue";
     </section>
 
     <div class="pt-10">
-      <picture>
-        <!-- Mobile -->
-        <source
-            media="(max-width: 640px)"
-            srcset="/farm-peoples-800.jpg"
-            class="w-full max-h-300 object-cove"
-        />
-
-        <!-- Tablet -->
-        <source
-            media="(max-width: 1024px)"
-            srcset="/farm-peoples-1500.jpg"
-            class="w-full max-h-300 object-cove"
-        />
-
-        <!-- Desktop -->
-        <img
-            src="/farm-peoples-2500.jpg"
-            alt="Farm and Peoples"
-            class="w-full max-h-300 object-cove"
-        />
-      </picture>
+      <img
+          src="/farm-peoples-1500.jpg"
+          srcset="
+            /farm-peoples-800.jpg 800w,
+            /farm-peoples-1500.jpg 1500w,
+            /farm-peoples-2500.jpg 2500w
+          "
+          sizes="100vw"
+          alt="Farm and Peoples"
+          loading="lazy"
+          class="w-full max-h-300 object-cover"
+      >
     </div>
 
     <!--
       Current Projects and Founding
     -->
-    <section id="current-projects" class="max-w-content mx-auto pl-15 pr-15 p-20">
-      <h2 class="text-7xl font-semibold pt-5 pb-10">Current Projects</h2>
+    <section id="current-projects" class="max-w-content mx-auto pl-5 pr-5 md:pl-15 md:pr-15">
+      <h2 class="text-4xl md:text-7xl font-semibold text-center md:text-left pt-15 pb-10">Current Projects</h2>
 
       <div class="grid grid-cols-1 gap-5 lg:grid-cols-2">
         <ProjectItemCard
@@ -250,8 +252,8 @@ import KeyStatements from "./components/KeyStatements.vue";
     <!--
       Support section
     -->
-    <section id="support" class=" max-w-content mx-auto pl-15 pr-15">
-      <h2 class="text-7xl font-semibold pt-0 pb-10">Support Us</h2>
+    <section id="support" class="max-w-content mx-auto pl-5 pr-5 md:pl-15 md:pr-15 pt-10 md:pt-15">
+      <h2 class="text-4xl md:text-7xl font-semibold text-center md:text-left pt-0 pb-10">Support Us</h2>
 
       <div class="flex flex-row max-[1024px]:flex-col gap-5 h-full">
 
@@ -344,9 +346,8 @@ import KeyStatements from "./components/KeyStatements.vue";
     <!--
       Meet the Team
     -->
-    <section id="team" class="max-w-content mx-auto pl-15 pr-15">
-
-      <h2 class="text-7xl font-semibold pt-15 pb-10">Meet the Team</h2>
+    <section id="team" class="max-w-content mx-auto pl-5 pr-5 md:pl-15 md:pr-15 pt-10 md:pt-15">
+      <h2 class="text-4xl md:text-7xl font-semibold text-center md:text-left pt-0 pb-10">Meet the Team</h2>
 
       <div class="flex justify-center">
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
