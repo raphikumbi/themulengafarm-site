@@ -6,7 +6,7 @@ import YoutubePlayer from "./components/media/YoutubePlayer.vue";
 import RaiseNowButton from "./components/buttons/RaiseNowButton.vue";
 import ProjectItemCard from "./components/ProjectItemCard.vue";
 import TeamMemberCard from "./components/TeamMemberCard.vue";
-import KeyStatements from "./components/KeyStatements.vue";
+import KeyStatementsCard from "./components/KeyStatementsCard.vue";
 
 </script>
 
@@ -14,6 +14,14 @@ import KeyStatements from "./components/KeyStatements.vue";
             Desktop | Tablet | Phone
 main-title:   7xl   |   7xl  |  4xl
 padding:       15   |    15  |   5
+
+-->
+
+
+<!-- TODO
+
+Connect with Us
+Zeitstrahl
 
 -->
 
@@ -91,25 +99,25 @@ padding:       15   |    15  |   5
     -->
     <section class="max-w-content mx-auto pl-10 pr-10 pt-15 pb-15 md:pl-25 md:pr-25 md:pb-10">
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        <KeyStatements
+        <KeyStatementsCard
             number="1"
             title="Sustainable Agriculture"
             text="To promote sustainable and regenerative agriculture, mainly through citrus and crop farming in Zambia."
         />
 
-        <KeyStatements
+        <KeyStatementsCard
             number="2"
             title="Food Security & Rural Development"
             text="To support food security and rural development by establishing agricultural infrastructure and demonstration farms."
         />
 
-        <KeyStatements
+        <KeyStatementsCard
             number="3"
             title="Environmental Protection"
             text="To promote environmental protection and prevent deforestation."
         />
 
-        <KeyStatements
+        <KeyStatementsCard
             number="4"
             title="Knowledge & Empowerment"
             text="To promote knowledge transfer, skills training and community empowerment to support vulnerable communities, including youth and orphans."
