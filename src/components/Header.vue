@@ -13,17 +13,17 @@ import DonateButtonSmall from "./buttons/DonateButtonSmall.vue";
           class="h-12 w-12 object-cover rounded-full"
       />
 
-      <h1 class="text-sm min-[450px]:text-xl sm:text-3xl font-jakarta font-semibold tracking-wider text-black">
+      <h1 class="text-sm min-[480px]:text-xl sm:text-3xl font-jakarta font-semibold tracking-wider text-black">
         THE MULENGA FARM
       </h1>
 
     </div>
 
-    <div class="hidden min-[450px]:block">
+    <div class="hidden min-[480px]:block">
       <DonateButton />
     </div>
 
-    <div class="block min-[450px]:hidden">
+    <div class="block min-[480px]:hidden">
       <DonateButtonSmall />
     </div>
 

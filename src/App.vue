@@ -47,7 +47,7 @@ Zeitstrahl
           sizes="100vw"
           alt="Hero"
           loading="lazy"
-          class="w-full max-h-175 object-cover"
+          class="w-full max-h-[50vh] object-cover"
       >
     </section>
 
