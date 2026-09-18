@@ -149,19 +149,25 @@ Zeitstrahl
       </ul>
     </section>
 
-    <div class="pt-10">
-      <img
-          src="/farm-peoples-1500.jpg"
-          srcset="
-            /farm-peoples-800.jpg 800w,
-            /farm-peoples-1500.jpg 1500w,
-            /farm-peoples-2500.jpg 2500w
-          "
-          sizes="100vw"
-          alt="Farm and Peoples"
-          loading="lazy"
-          class="w-full max-h-300 object-cover"
-      >
+    <div class="max-w-content mx-auto px-5 pt-12 md:max-w-none md:px-0 md:pt-10">
+      <picture>
+        <source
+            media="(max-width: 640px)"
+            srcset="/farm-peoples-800.jpg"
+        />
+
+        <source
+            media="(max-width: 1024px)"
+            srcset="/farm-peoples-1500.jpg"
+        />
+
+        <img
+            src="/farm-peoples-2500.jpg"
+            alt="Farm and Peoples"
+            loading="lazy"
+            class="w-full max-h-300 object-cover"
+        />
+      </picture>
     </div>
 
     <!--
@@ -260,7 +266,7 @@ Zeitstrahl
     <!--
       Support section
     -->
-    <section id="support" class="max-w-content mx-auto pl-5 pr-5 md:pl-15 md:pr-15 pt-10 md:pt-15">
+    <section id="support" class="max-w-content mx-auto pl-5 pr-5 md:pl-15 md:pr-15 pt-10 md:pt-15 scroll-mt-15">
       <h2 class="text-4xl md:text-7xl font-semibold text-center md:text-left pt-0 pb-10">Support Us</h2>
 
       <div class="flex flex-row max-[1024px]:flex-col gap-5 h-full">
