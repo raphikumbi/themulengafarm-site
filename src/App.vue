@@ -148,11 +148,6 @@ Zeitstrahl
         </section>
 
         <!--
-          Timeline
-        -->
-        <Timeline />
-
-        <!--
           Latest Update Section
         -->
         <section id="latest-update" class="max-w-content mx-auto pl-5 pr-5 md:pl-15 md:pr-15 pt-3 md:pt-10">
