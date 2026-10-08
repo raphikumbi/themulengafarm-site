@@ -8,7 +8,7 @@ import DonateButtonSmall from "./buttons/DonateButtonSmall.vue";
     <div class="flex items-center gap-3">
 
       <img
-          src="/logo-96.png"
+          src="/logo-96.webp"
           alt="Logo"
           class="h-12 w-12 object-cover rounded-full"
       />
