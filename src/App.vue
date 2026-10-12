@@ -13,7 +13,6 @@ import { onMounted } from 'vue'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { ScrollSmoother } from 'gsap/ScrollSmoother'
-import Timeline from "./components/Timeline.vue";
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother)
 
@@ -41,6 +40,8 @@ padding:       15   |    15  |   5
 
 Connect with Us
 Zeitstrahl
+More Pictures
+Finished Projects
 
 -->
 
@@ -146,6 +147,10 @@ Zeitstrahl
             />
           </div>
         </section>
+
+        <!--
+          Timeline
+        -->
 
         <!--
           Latest Update Section

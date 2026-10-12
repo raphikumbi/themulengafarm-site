@@ -6,10 +6,7 @@ export default defineConfig({
 
   // TODO: remove in production!
   server: {
-    watch: {
-      usePolling: true,
-      interval: 100,
-    },
+
   },
 
 })
