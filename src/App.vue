@@ -7,7 +7,6 @@ import RaiseNowButton from "./components/buttons/RaiseNowButton.vue";
 import ProjectItemCard from "./components/ProjectItemCard.vue";
 import TeamMemberCard from "./components/TeamMemberCard.vue";
 import KeyStatementsCard from "./components/KeyStatementsCard.vue";
-import TimelineEntry from "./components/TimelineEntry.vue";
 
 // GSAP smooth scrolling
 import { onMounted } from 'vue'
