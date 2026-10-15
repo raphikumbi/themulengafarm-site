@@ -17,13 +17,15 @@ import { ScrollSmoother } from 'gsap/ScrollSmoother'
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother)
 
 onMounted(() => {
-  ScrollSmoother.create({
+  const smoother = ScrollSmoother.create({
     wrapper: '#smooth-wrapper',
     content: '#smooth-content',
     smooth: 0.7,
     effects: true,
     smoothTouch: 0.5
   })
+
+  ScrollTrigger.refresh()
 })
 
 </script>
@@ -54,7 +56,8 @@ Finished Projects
     <Header id="header"/>
 
     <div id="smooth-content">
-      <div class="min-h-screen bg-zinc-50 text-black font-jakarta">
+
+      <div class="min-h-screen bg-zinc-50 text-text-strong font-jakarta">
 
         <!--
           Website Hero
@@ -70,7 +73,7 @@ Finished Projects
               sizes="100vw"
               alt="Hero"
               loading="lazy"
-              class="w-full max-h-[35vh] object-cover"
+              class="w-full max-h-[26vh] object-cover"
           >
         </section>
 
@@ -120,7 +123,7 @@ Finished Projects
         <!--
           Key Statements
         -->
-        <section class="max-w-content mx-auto pl-10 pr-10 pt-15 pb-15 md:pl-25 md:pr-25 md:pb-10">
+        <section class="max-w-content mx-auto pl-10 pr-10 pt-15 pb-5 md:pl-25 md:pr-25 md:pb-10">
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <KeyStatementsCard
                 number="1"
@@ -149,51 +152,37 @@ Finished Projects
         </section>
 
         <!--
-          Latest Update Section
-        -->
-        <section id="latest-update" class="max-w-content mx-auto pl-5 pr-5 md:pl-15 md:pr-15 pt-3 md:pt-10">
-          <YoutubePlayer
-              thumbnail="/video/banner-2025-christmas.webp"
-              title="Latest Update"
-              id="75ftg_fsrLQ"
-              duration="3:00"
-              width="100%"
-              height="400px"
-          />
-
-          <h2 class="text-lg md:text-2xl text-center md:text-left font-semibold text-text-strong pt-5 md:pt-10 pb-5">
-            Infrastructure Development and Agricultural Expansion Progress
-          </h2>
-
-          <ul class="list-disc pl-5 text-text-soft text-sm md:text-base">
-            <li>Expansion of water system, including setup for irrigation</li>
-            <li>Sanitation system connected</li>
-            <li>Ongoing planting of fruit trees (citrus, avocados, bananas)</li>
-            <li>Preparation for expansion to larger farmland</li>
-            <li>Legal procedures for NGO structures in Zambia</li>
-          </ul>
-        </section>
-
-        <div class="max-w-content mx-auto px-5 pt-12 md:max-w-none md:px-0 md:pt-10">
-          <picture>
-            <source
-                media="(max-width: 640px)"
-                srcset="/farm-peoples-800.webp"
-            />
-
-            <source
-                media="(max-width: 1024px)"
-                srcset="/farm-peoples-1500.webp"
-            />
-
+          Photos
+        --> 
+        <section class="max-w-content mx-auto pl-5 pr-5 md:pl-15 md:pr-15 pt-10 pb-5">
+          <div class="grid grid-cols-2 gap-4 lg:gap-7 h-60 lg:h-160">
             <img
-                src="/farm-peoples-2500.webp"
-                alt="Farm and Peoples"
-                loading="lazy"
-                class="w-full max-h-300 object-cover"
-            />
-          </picture>
-        </div>
+              src="/2026/jameson_teaching_2_1500.webp"
+              alt="Jameson Teaching"
+              loading="lazy"
+              class="w-full h-full min-w-0 min-h-0 object-cover "
+            >
+            <img
+              src="/2026/jameson_freind_1500.webp"
+              alt="Hero"
+              loading="lazy"
+              class="w-full h-full min-w-0 min-h-0 object-cover"
+            >
+          </div>
+
+          <img
+            src="/2026/jameson_teaching_1_1500.webp"
+            srcset="
+                /2026/jameson_teaching_1_800.webp 800w,
+                /2026/jameson_teaching_1_1500.webp 1500w,
+                /2026/jameson_teaching_1_2500.webp 2500w
+              "
+            sizes="(max-width: 1024px) 100vw, 50vw"
+            alt="Hero"
+            loading="lazy"
+            class="w-full h-60 lg:h-160 min-w-0 min-h-0 object-cover saturate-[1.3] pt-4 lg:pt-7"
+          >
+        </section>
 
         <!--
           Timeline
@@ -365,6 +354,53 @@ Finished Projects
 
           </div>
         </section>
+
+        <!--
+          Latest Update Section
+        -->
+        <section id="latest-update" class="max-w-content mx-auto pl-5 pr-5 md:pl-15 md:pr-15 pt-3 md:pt-10">
+          <YoutubePlayer
+              thumbnail="/video/banner-2025-christmas.webp"
+              title="Latest Update"
+              id="75ftg_fsrLQ"
+              duration="3:00"
+              width="100%"
+              height="400px"
+          />
+
+          <h2 class="text-lg md:text-2xl text-center md:text-left font-semibold text-text-strong pt-5 md:pt-10 pb-5">
+            Infrastructure Development and Agricultural Expansion Progress
+          </h2>
+
+          <ul class="list-disc pl-5 text-text-soft text-sm md:text-base">
+            <li>Expansion of water system, including setup for irrigation</li>
+            <li>Sanitation system connected</li>
+            <li>Ongoing planting of fruit trees (citrus, avocados, bananas)</li>
+            <li>Preparation for expansion to larger farmland</li>
+            <li>Legal procedures for NGO structures in Zambia</li>
+          </ul>
+        </section>
+
+        <div class="max-w-content mx-auto px-5 pt-12 md:max-w-none md:px-0 md:pt-10">
+          <picture>
+            <source
+                media="(max-width: 640px)"
+                srcset="/farm-peoples-800.webp"
+            />
+
+            <source
+                media="(max-width: 1024px)"
+                srcset="/farm-peoples-1500.webp"
+            />
+
+            <img
+                src="/farm-peoples-2500.webp"
+                alt="Farm and Peoples"
+                loading="lazy"
+                class="w-full max-h-300 object-cover"
+            />
+          </picture>
+        </div>
 
         <!--
           Current Projects and Founding

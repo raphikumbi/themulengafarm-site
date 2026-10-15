@@ -5,11 +5,5 @@ export default defineConfig({
   plugins: [vue()],
 
   // TODO: remove in production!
-  server: {
-    watch: {
-      usePolling: true,
-      interval: 1000,
-    },
-  },
 
 })

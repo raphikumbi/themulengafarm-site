@@ -4,7 +4,7 @@ import IconInstagram from "./icons/IconInstagram.vue";
 import IconYoutube from "./icons/IconYoutube.vue";
 </script>
 <template>
-  <footer class="w-full mx-auto bg-zinc-900 text-white py-10">
+  <footer class="w-full h-70 mx-auto bg-zinc-900 text-white py-10">
     <div class="px-4 flex flex-col items-center text-center space-y-6">
 
       <h2 class="text-xl font-semibold">
