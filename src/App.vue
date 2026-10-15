@@ -7,6 +7,7 @@ import RaiseNowButton from "./components/buttons/RaiseNowButton.vue";
 import ProjectItemCard from "./components/ProjectItemCard.vue";
 import TeamMemberCard from "./components/TeamMemberCard.vue";
 import KeyStatementsCard from "./components/KeyStatementsCard.vue";
+import TimelineEntry from "./components/TimelineEntry.vue";
 
 // GSAP smooth scrolling
 import { onMounted } from 'vue'
@@ -149,10 +150,6 @@ Finished Projects
         </section>
 
         <!--
-          Timeline
-        -->
-
-        <!--
           Latest Update Section
         -->
         <section id="latest-update" class="max-w-content mx-auto pl-5 pr-5 md:pl-15 md:pr-15 pt-3 md:pt-10">
@@ -165,7 +162,9 @@ Finished Projects
               height="400px"
           />
 
-          <h2 class="text-lg md:text-2xl text-center md:text-left font-semibold text-text-strong pt-5 md:pt-10 pb-5">Infrastructure Development and Agricultural Expansion Progress</h2>
+          <h2 class="text-lg md:text-2xl text-center md:text-left font-semibold text-text-strong pt-5 md:pt-10 pb-5">
+            Infrastructure Development and Agricultural Expansion Progress
+          </h2>
 
           <ul class="list-disc pl-5 text-text-soft text-sm md:text-base">
             <li>Expansion of water system, including setup for irrigation</li>
@@ -198,10 +197,181 @@ Finished Projects
         </div>
 
         <!--
+          Timeline
+        -->
+        <section class="max-w-content mx-auto pl-5 pr-5 pt-15 pb-5 md:pl-15 md:pr-15">
+          <h2 class="text-4xl md:text-7xl font-semibold text-center md:text-left pb-10">Project Timeline</h2>
+
+          <p class="text-base text-text-midd leading-8 text-justify pt-5 pb-5 hidden lg:block">
+            Since 2018, The Mulenga Farm has grown into a community-focused initiative in Zambia.<br>
+            From citrus farming and poultry to education, training and solar-powered water access, each step brings us closer to a sustainable future.
+            Our next goals include establishing an orphanage and developing export and tourism opportunities.
+          </p>
+
+          <img
+            src="/timeline.svg"
+            alt="Timeline"
+            loading="lazy"
+            class="w-full object-cover hidden lg:block"
+          >
+
+          <div class="block lg:hidden">
+            <div class="grid grid-cols-[1fr_16px_1fr]">
+
+              <!-- 2019 -->
+              <div class="text-accent text-end pr-3 leading-3.5 h-4">
+                2019
+              </div>
+
+              <div class="w-4 h-4 border-2 border-accent rounded-full"></div>
+
+              <div class="text-start pl-3">
+              </div>
+
+              <div class="text-text-soft text-end pr-3 pt-1 text-xs">
+                First meeting between Lionel and Jameson in Ndola
+              </div>
+
+              <div class="w-0.5 bg-accent mx-auto pb-10"></div>
+
+              <div class="text-start pl-3">
+              </div>
+
+              <!-- 2021 -->
+              <div class="text-end pr-3">
+              </div>
+
+              <div class="w-4 h-4 border-2 border-accent rounded-full"></div>
+
+              <div class="text-accent text-start pl-3 leading-3.5 h-4">
+                2021
+              </div>
+
+              <div class="text-end pr-3">
+              </div>
+
+              <div class="w-0.5 bg-accent mx-auto pb-10"></div>
+
+              <div class="text-text-soft text-start pl-3 pt-1 text-xs">
+                Studies & Framework by Jameson
+              </div>
+
+              <!-- 2022 -->
+              <div class="text-accent text-end pr-3 leading-3.5 h-4">
+                2022
+              </div>
+
+              <div class="w-4 h-4 border-2 border-accent rounded-full"></div>
+
+              <div class="text-start pl-3">
+              </div>
+
+              <div class="text-text-soft text-end pr-3 pt-1 text-xs">
+                Citrus Tree plantation and Poultry
+              </div>
+
+              <div class="w-0.5 bg-accent mx-auto pb-10"></div>
+
+              <div class="text-start pl-3">
+              </div>
+
+              <!-- 2024 -->
+              <div class="text-end pr-3">
+              </div>
+
+              <div class="w-4 h-4 border-2 border-accent rounded-full"></div>
+
+              <div class="text-accent text-start pl-3 leading-3.5 h-4">
+                2024
+              </div>
+
+              <div class="text-end pr-3">
+              </div>
+
+              <div class="w-0.5 bg-accent mx-auto pb-10"></div>
+
+              <div class="text-text-soft text-start pl-3 pt-1 text-xs">
+                Comunity trainging center<br>
+                Governement water connection<br>
+                1500 Citrus and Avocado trees and 100 Chicken
+              </div>
+
+              <!-- 2025 -->
+              <div class="text-accent text-end pr-3 leading-3.5 h-4">
+                2025
+              </div>
+
+              <div class="w-4 h-4 border-2 border-accent rounded-full"></div>
+
+              <div class="text-start pl-3">
+              </div>
+
+              <div class="text-text-soft text-end pr-3 pt-1 text-xs">
+                Opening of the school and training classes<br>
+                Installation of Solar Water Pump 
+              </div>
+
+              <div class="w-0.5 bg-accent mx-auto pb-10"></div>
+
+              <div class="text-start pl-3">
+              </div>
+
+              <!-- 2026 -->
+              <div class="text-end pr-3">
+              </div>
+
+              <div class="w-4 h-4 border-2 border-accent rounded-full"></div>
+
+              <div class="text-accent text-start pl-3 leading-3.5 h-4">
+                2026
+              </div>
+
+              <div class="text-end pr-3">
+              </div>
+
+              <div class="w-0.5 bg-accent mx-auto pb-10"></div>
+
+              <div class="text-text-soft text-start pl-3 pt-1 text-xs">
+                Establishment of the legal structures of the MulengaFarm NGO in Zambia
+              </div>
+
+            <!-- Future -->
+              <div class="text-accent text-end pr-3 leading-3.5 h-4">
+                Future
+              </div>
+
+              <div class="w-4 h-4 border-2 border-accent rounded-full"></div>
+
+              <div class="text-start pl-3">
+              </div>
+
+              <div class="text-text-soft text-end pr-3 pt-1 pb-4 text-xs">
+                Orphanage<br>
+                Export<br>
+                Tourisme
+              </div>
+
+              <div class="w-0.5 bg-accent mx-auto pb-10"></div>
+
+              <div class="text-start pl-3">
+              </div>
+
+              <!-- Arrow -->
+              <div></div>
+
+              <div class="w-4 h-4 border-r-2 border-b-2 border-accent rotate-45 -translate-y-2"></div>
+
+              <div></div>
+            </div>
+
+          </div>
+        </section>
+
+        <!--
           Current Projects and Founding
         -->
         <section id="current-projects" class="max-w-content mx-auto pl-5 pr-5 md:pl-15 md:pr-15">
-          <h2 class="text-4xl md:text-7xl font-semibold text-center md:text-left pt-15 pb-10">Current Projects</h2>
+          <h2 class="text-4xl md:text-7xl font-semibold text-center md:text-left pt-5 pb-10 md:pt-15">Current Projects</h2>
 
           <div class="grid grid-cols-1 gap-5 lg:grid-cols-2">
             <ProjectItemCard
