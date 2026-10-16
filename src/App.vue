@@ -88,10 +88,10 @@ Finished Projects
 
               <p class="text-base text-text-midd leading-8 text-justify md:text-left pt-5">
                 TheMulengaFarm is becoming a commercial farm in Ndola, Zambia, cultivating sustainable agriculture by providing skills training and future employment opportunities for rural communities.<br>
-                Our vision is to see that, through our farming activities, orphanages are supported to empower youth and vulnerable people.<br>
-                We operate regenerative and sustainable citrus and crop farming, combined with our teaching activities at our Community Training Center in Ndola.<br>
+                Our vision is to empower youth and vulnerable people and found an orphanage sustained by our farming activities.<br>
+                We operate regenerative and sustainable citrus and crop farming and operate teaching activities at our Community Training Center in Ndola.<br>
                 By doing so, we promote rural agricultural development, improve food security and diversification, and combat climate change by actively working against deforestation.<br>
-                Our mission is not only to cultivate crops and trees but also to generate hope, create future perspectives, especially among the youth, and, by doing so, share the love of God. We look forward to seeing the agricultural sector in Zambia change.<br>
+                Our mission is not only to cultivate crops and trees, but also to generate hope, create future perspectives, especially among the youth, and, by doing so, share the love of God. We look forward to seeing the agricultural sector in Zambia change.<br>
               </p>
             </div>
 
@@ -191,9 +191,9 @@ Finished Projects
           <h2 class="text-4xl md:text-7xl font-semibold text-center md:text-left pb-10">Project Timeline</h2>
 
           <p class="text-base text-text-midd leading-8 text-justify pt-5 pb-5 hidden lg:block">
-            Since 2018, The Mulenga Farm has grown into a community-focused initiative in Zambia.<br>
-            From citrus farming and poultry to education, training and solar-powered water access, each step brings us closer to a sustainable future.
-            Our next goals include establishing an orphanage and developing export and tourism opportunities.
+            Since 2018, The Mulenga Farm has grown into a community-focused initiative in Ndola, Zambia.
+            From citrus farming and poultry to education to water access, we try to tackle the main challenges rural communities in Ndola are facing, such as corrupt seed policies, soil degradation and unemployment.
+            Our main goals include establishing a community training centre, a commercial farm, an orphanage, and developing export and tourism opportunities.
           </p>
 
           <img
@@ -225,68 +225,28 @@ Finished Projects
               <div class="text-start pl-3">
               </div>
 
-              <!-- 2021 -->
+              <!-- 2022 -->
               <div class="text-end pr-3">
               </div>
 
               <div class="w-4 h-4 border-2 border-accent rounded-full"></div>
 
               <div class="text-accent text-start pl-3 leading-3.5 h-4">
-                2021
-              </div>
-
-              <div class="text-end pr-3">
-              </div>
-
-              <div class="w-0.5 bg-accent mx-auto pb-10"></div>
-
-              <div class="text-text-soft text-start pl-3 pt-1 text-xs">
-                Studies & Framework by Jameson
-              </div>
-
-              <!-- 2022 -->
-              <div class="text-accent text-end pr-3 leading-3.5 h-4">
                 2022
               </div>
 
-              <div class="w-4 h-4 border-2 border-accent rounded-full"></div>
-
-              <div class="text-start pl-3">
-              </div>
-
-              <div class="text-text-soft text-end pr-3 pt-1 text-xs">
-                Citrus Tree plantation and Poultry
-              </div>
-
-              <div class="w-0.5 bg-accent mx-auto pb-10"></div>
-
-              <div class="text-start pl-3">
-              </div>
-
-              <!-- 2024 -->
-              <div class="text-end pr-3">
-              </div>
-
-              <div class="w-4 h-4 border-2 border-accent rounded-full"></div>
-
-              <div class="text-accent text-start pl-3 leading-3.5 h-4">
-                2024
-              </div>
-
               <div class="text-end pr-3">
               </div>
 
               <div class="w-0.5 bg-accent mx-auto pb-10"></div>
 
               <div class="text-text-soft text-start pl-3 pt-1 text-xs">
-                Comunity trainging center<br>
-                Governement water connection<br>
-                1500 Citrus and Avocado trees and 100 Chicken
+                Citrus Tree Plantation and Poultry in Jameson’s Aunt’s Backyard
               </div>
 
-              <!-- 2025 -->
+              <!-- 2024 -->
               <div class="text-accent text-end pr-3 leading-3.5 h-4">
-                2025
+                2024
               </div>
 
               <div class="w-4 h-4 border-2 border-accent rounded-full"></div>
@@ -295,8 +255,9 @@ Finished Projects
               </div>
 
               <div class="text-text-soft text-end pr-3 pt-1 text-xs">
-                Opening of the school and training classes<br>
-                Installation of Solar Water Pump 
+                Second Meeting<br>
+                Building of the Community Training Center<br>
+                Planting of 1500 Citrus and Avocado Trees, and 50 Chickens
               </div>
 
               <div class="w-0.5 bg-accent mx-auto pb-10"></div>
@@ -320,7 +281,47 @@ Finished Projects
               <div class="w-0.5 bg-accent mx-auto pb-10"></div>
 
               <div class="text-text-soft text-start pl-3 pt-1 text-xs">
-                Establishment of the legal structures of the MulengaFarm NGO in Zambia
+                Third Meeting<br>
+                Opening of the School and Training Classes<br>
+                Establishment of the legal structures of the Mulenga Farm NGO in Zambia<br>
+              </div>
+
+              <!-- 2028 -->
+              <div class="text-accent text-end pr-3 leading-3.5 h-4">
+                2028
+              </div>
+
+              <div class="w-4 h-4 border-2 border-accent rounded-full"></div>
+
+              <div class="text-start pl-3">
+              </div>
+
+              <div class="text-text-soft text-end pr-3 pt-1 text-xs">
+                Establishment of a Commercial Farm with 5-10 hectares of land
+              </div>
+
+              <div class="w-0.5 bg-accent mx-auto pb-10"></div>
+
+              <div class="text-start pl-3">
+              </div>
+
+              <!-- 2035 -->
+              <div class="text-end pr-3">
+              </div>
+
+              <div class="w-4 h-4 border-2 border-accent rounded-full"></div>
+
+              <div class="text-accent text-start pl-3 leading-3.5 h-4">
+                2035
+              </div>
+
+              <div class="text-end pr-3">
+              </div>
+
+              <div class="w-0.5 bg-accent mx-auto pb-10"></div>
+
+              <div class="text-text-soft text-start pl-3 pt-1 text-xs">
+                Establishment of an orphanage
               </div>
 
             <!-- Future -->
@@ -334,9 +335,7 @@ Finished Projects
               </div>
 
               <div class="text-text-soft text-end pr-3 pt-1 pb-4 text-xs">
-                Orphanage<br>
-                Export<br>
-                Tourisme
+                Export and Tourisme
               </div>
 
               <div class="w-0.5 bg-accent mx-auto pb-10"></div>
@@ -447,12 +446,12 @@ Finished Projects
             <ProjectItemCard
                 title="Government Water Connection"
                 description="Water connection for the community, completed in 2025."
-                :current="1500"
-                :goal="1500"
+                :current="800"
+                :goal="800"
             />
 
             <ProjectItemCard
-                title="School & Office Buildings"
+                title="Community training center"
                 description="Three classrooms, an office, bathrooms and wastewater treatment, completed in 2025."
                 :current="15000"
                 :goal="15000"
@@ -508,7 +507,7 @@ Finished Projects
                   QR Code
                 -->
                 <div class="flex-1 flex items-center max-w-40">
-                  <div class="pr-5">
+                  <div class="pr-2">
                     <img src="/qrc-bank.webp" alt="Donation QR Code" class="h-31 w-31 object-contain select-none"/>
                   </div>
                 </div>
@@ -516,7 +515,7 @@ Finished Projects
                 <!--
                   Details
                 -->
-                <div class="flex-1">
+                <div class="flex-1 -translate-x-5">
                   <div class="space-y-2 text-sm text-zinc-700">
                     <p>
                       <b>IBAN:</b> CH34 0076 9440 8377 7200 1
@@ -584,23 +583,7 @@ Finished Projects
                   name="Lionel"
                   func="Founder, Networking"
                   loc="BASEL, SWITZERLAND"
-                  desc="I look forward to seeing our culture and society develop into a more human-centered future, where sense, solidarity, communion, and beauty form its core. I love people and traveling, and I enjoy seeing the love of God made practical, starting from the ground up with a shift in agriculture."
-              />
-
-              <TeamMemberCard
-                  imgSrc="/team/portrait-louis.webp"
-                  name="Louis"
-                  func="Media, Architect"
-                  loc="STRASBOURG, FRANCE"
-                  desc="I’m passionate about my career in media, and I love capturing stories through photography and visual art. I enjoy transforming perspectives and sharing moments that highlight people, culture, and everyday life, especially by giving a voice and visibility to those who are often unseen. I feel called to use media as a tool for a positive impact."
-              />
-
-              <TeamMemberCard
-                  imgSrc="/team/portrait-sebastian.webp"
-                  name="Sebastian"
-                  func="Finances"
-                  loc="ZÜRICH, SWITZERLAND"
-                  desc="..."
+                  desc="I look forward to seeing our culture and society develop into a more human-centered future, where sense, solidarity, communion, and beauty form its core. I enjoy to see the love of God made practical, starting from the ground up with a shift in agriculture."
               />
 
               <TeamMemberCard
@@ -612,11 +595,27 @@ Finished Projects
               />
 
               <TeamMemberCard
+                  imgSrc="/team/portrait-louis.webp"
+                  name="Louis"
+                  func="Media, Architect"
+                  loc="STRASBOURG, FRANCE"
+                  desc=""
+              />
+
+              <TeamMemberCard
+                  imgSrc="/team/portrait-sebastian.webp"
+                  name="Sebastian"
+                  func="Finances"
+                  loc="ZÜRICH, SWITZERLAND"
+                  desc=""
+              />
+
+              <TeamMemberCard
                   imgSrc="/team/portrait-francois.webp"
                   name="Francois"
                   func="Landscape Architect"
                   loc="ALSACE, FRANCE"
-                  desc="..."
+                  desc=""
               />
 
             </div>
