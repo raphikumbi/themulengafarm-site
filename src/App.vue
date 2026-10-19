@@ -71,7 +71,7 @@ Finished Projects
                 /hero-2500.webp 2500w
               "
               sizes="100vw"
-              alt="Hero"
+              alt="The Mulenga Farm"
               loading="lazy"
               class="w-full max-h-[26vh] object-cover"
           >
@@ -155,18 +155,18 @@ Finished Projects
           Photos
         --> 
         <section class="max-w-content mx-auto pl-5 pr-5 md:pl-15 md:pr-15 pt-10 pb-5">
-          <div class="grid grid-cols-2 gap-4 lg:gap-7 h-60 lg:h-160">
+          <div class="grid grid-col-1 md:grid-cols-2 gap-4 lg:gap-7">
             <img
               src="/2026/jameson_teaching_2_1500.webp"
               alt="Jameson Teaching"
               loading="lazy"
-              class="w-full h-full min-w-0 min-h-0 object-cover "
+              class="w-full h-80 lg:h-160 min-w-0 min-h-0 object-cover "
             >
             <img
               src="/2026/jameson_freind_1500.webp"
-              alt="Hero"
+              alt="Jameson Teaching"
               loading="lazy"
-              class="w-full h-full min-w-0 min-h-0 object-cover"
+              class="w-full h-80 lg:h-160 min-w-0 min-h-0 object-cover saturate-[0.9]"
             >
           </div>
 
@@ -178,16 +178,16 @@ Finished Projects
                 /2026/jameson_teaching_1_2500.webp 2500w
               "
             sizes="(max-width: 1024px) 100vw, 50vw"
-            alt="Hero"
+            alt="Jameson Teaching"
             loading="lazy"
-            class="w-full h-60 lg:h-160 min-w-0 min-h-0 object-cover saturate-[1.3] pt-4 lg:pt-7"
+            class="w-full h-80 lg:h-160 min-w-0 min-h-0 object-cover saturate-[1.2] pt-4 lg:pt-7"
           >
         </section>
 
         <!--
           Timeline
         -->
-        <section class="max-w-content mx-auto pl-5 pr-5 pt-15 pb-5 md:pl-15 md:pr-15">
+        <section class="max-w-content mx-auto pl-5 pr-5 pt-10 md:pt-15 pb-5 md:pl-15 md:pr-15">
           <h2 class="text-4xl md:text-7xl font-semibold text-center md:text-left pb-10">Project Timeline</h2>
 
           <p class="text-base text-text-midd leading-8 text-justify pt-5 pb-5 hidden lg:block">
