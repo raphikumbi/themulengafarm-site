@@ -16,7 +16,7 @@ defineProps({
         :src="imgSrc"
         loading="lazy"
         :alt="name"
-        class="w-full h-max object-cover"
+        class="w-full aspect-4/4.25 object-cover"
     />
 
     <h3 class="text-lg md:text-2xl font-semibold tracking-wide text-text-strong pt-1">

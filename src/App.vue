@@ -7,6 +7,7 @@ import RaiseNowButton from "./components/buttons/RaiseNowButton.vue";
 import ProjectItemCard from "./components/ProjectItemCard.vue";
 import TeamMemberCard from "./components/TeamMemberCard.vue";
 import KeyStatementsCard from "./components/KeyStatementsCard.vue";
+import DonateButton from "./components/buttons/DonateButton.vue";
 
 // GSAP smooth scrolling
 import { onMounted } from 'vue'
@@ -53,7 +54,9 @@ Finished Projects
     <!--
       Header bar of the site
     -->
+
     <Header id="header"/>
+    
 
     <div id="smooth-content">
 
@@ -76,6 +79,7 @@ Finished Projects
               class="w-full max-h-[26vh] object-cover"
           >
         </section>
+
 
         <!--
           Our Mission section
@@ -157,16 +161,16 @@ Finished Projects
         <section class="max-w-content mx-auto pl-5 pr-5 md:pl-15 md:pr-15 pt-10 pb-5">
           <div class="grid grid-col-1 md:grid-cols-2 gap-4 lg:gap-7">
             <img
+              src="/2026/guy_learning.webp"
+              alt="Jameson Teaching"
+              loading="lazy"
+              class="w-full h-80 lg:h-160 min-w-0 min-h-0 object-cover saturate-[1.1]"
+            >
+            <img
               src="/2026/jameson_teaching_2_1500.webp"
               alt="Jameson Teaching"
               loading="lazy"
-              class="w-full h-80 lg:h-160 min-w-0 min-h-0 object-cover "
-            >
-            <img
-              src="/2026/jameson_freind_1500.webp"
-              alt="Jameson Teaching"
-              loading="lazy"
-              class="w-full h-80 lg:h-160 min-w-0 min-h-0 object-cover saturate-[0.9]"
+              class="w-full h-80 lg:h-160 min-w-0 min-h-0 object-cover saturate-[1.1]"
             >
           </div>
 
@@ -501,15 +505,13 @@ Finished Projects
                 Bank Transfer
               </h3>
 
-              <div class="flex flex-row ">
+              <div class="flex flex-row">
 
                 <!--
                   QR Code
                 -->
                 <div class="flex-1 flex items-center max-w-40">
-                  <div class="pr-2">
-                    <img src="/qrc-bank.webp" alt="Donation QR Code" class="h-31 w-31 object-contain select-none"/>
-                  </div>
+                  <img src="/qrc-bank.webp" alt="Donation QR Code" class="h-31 w-31 object-contain select-none"/>
                 </div>
 
                 <!--
@@ -591,7 +593,7 @@ Finished Projects
                   name="Raphael"
                   func="IT, Media"
                   loc="BASEL, SWITZERLAND"
-                  desc="..."
+                  desc="I’m passionate about technology and software development, and I love using my skills to help people and communities. Above all, I want to serve God and others through my work, putting my faith into action and sharing God’s love in practical ways."
               />
 
               <TeamMemberCard
